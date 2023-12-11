@@ -1,4 +1,4 @@
 .tarot-card {
   height: 80vmin;
-  pointer-events: none;
+  border-radius: 10px;
 }

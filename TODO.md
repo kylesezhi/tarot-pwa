@@ -1,6 +1,8 @@
 # TODO
 
-1. Tap/click to show static card
+1. Show random card (use Knuth Shuffle)
+1. Show reversed cards
 1. Animate flip card
 1. Animate click/tap card
-1. Show random card (use Knuth Shuffle)
+1. Fade in on initial load
+1. Ensure offline works
