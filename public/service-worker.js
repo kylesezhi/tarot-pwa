@@ -15,10 +15,6 @@ workbox.routing.registerRoute(
   /\.(?:png|gif|jpg|jpeg|webp|svg|ico)$/,
   workbox.strategies.cacheFirst()
 )
-// workbox.routing.registerRoute(
-//   ({request}) => request.destination === 'image',
-//   new workbox.strategies.CacheFirst()
-// )
 
 workbox.routing.registerRoute(
   /\.(?:js|css|html)$/,
