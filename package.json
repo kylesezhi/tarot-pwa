@@ -2,6 +2,9 @@
   "name": "tarot-pwa",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "http-server ./build"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "13.4.0",
@@ -51,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "http-server": "14.1.1"
   }
 }
