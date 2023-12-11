@@ -1,6 +1,5 @@
 # TODO
 
-1. Show random card (use Knuth Shuffle)
 1. Show reversed cards
 1. Animate flip card
 1. Animate click/tap card
