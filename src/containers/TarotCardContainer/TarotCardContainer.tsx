@@ -8,7 +8,7 @@ function TarotCardContainer() {
   const handleClick = () => setCardNumber(drawCard());
 
   return (
-    <div onClick={handleClick} >
+    <div onClick={handleClick} className='tarot-card-container' >
       <TarotCard cardNumber={cardNumber} />
     </div>
   )

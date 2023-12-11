@@ -1,5 +1,6 @@
 # TODO
 
+1. Back button
 1. Show reversed cards
 1. Animate flip card
 1. Animate click/tap card

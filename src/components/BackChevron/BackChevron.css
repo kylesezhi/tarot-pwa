@@ -1,0 +1,9 @@
+.back-chevron {
+  height: 10vmin;
+}
+
+.back-chevron-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
