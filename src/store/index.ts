@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-const tarot_interpretations = require('./tarot_interpretations.json');
+// const tarot_interpretations = require('./tarot_interpretations.json');
 
 export const BACK_OF_CARD_NUMBER = 78;
 type Card = {
