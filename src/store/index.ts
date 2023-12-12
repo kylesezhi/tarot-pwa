@@ -16,7 +16,8 @@ interface Store {
   shuffleDeck: () => void;
   back: () => void;
   // TODO add whole interpretation 
-  getInterpretation: () => string
+  getInterpretation: () => string;
+  isShowing: boolean;
 }
 const backCard: Card = {
   number: BACK_OF_CARD_NUMBER,
@@ -25,27 +26,29 @@ const backCard: Card = {
 
 export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
   devtools(
-  (set) => ({
-    card: backCard,
-    deck: Array.from({ length: 78 }, (_, index) => ({number: index, reversed: false})),
-    drawCard: () => set(({deck, card}) => {
-      if (card.number !== BACK_OF_CARD_NUMBER) {
-        return {};
-      }
-      return {
-        card: deck[Math.floor(Math.random() * deck.length)]
-      };
-    }),
-    shuffleDeck: () => set((state) => {
-      return {
-        deck: shuffle(state.deck.slice(0))
-          .map((card: Card) => {
-            card.reversed = Math.random() < REVERSED_CHANCE;
-            return card;
-          })}
-    }),
-    back: () => set(({card: backCard})),
-    getInterpretation: () => 'hai'
-  })
+    (set, get) => ({
+      card: backCard,
+      deck: Array.from({ length: 78 }, (_, index) => ({number: index, reversed: false})),
+      drawCard: () => set(({deck, card}) => {
+        if (card.number !== BACK_OF_CARD_NUMBER) {
+          return {};
+        }
+        return {
+          card: deck[Math.floor(Math.random() * deck.length)],
+          isShowing: true,
+        };
+      }),
+      shuffleDeck: () => set((state) => {
+        return {
+          deck: shuffle(state.deck.slice(0))
+            .map((card: Card) => {
+              card.reversed = Math.random() < REVERSED_CHANCE;
+              return card;
+            })}
+      }),
+      back: () => set(({card: backCard, isShowing: false})),
+      getInterpretation: () => 'TODO',
+      isShowing: false,
+    })
   )
 )
