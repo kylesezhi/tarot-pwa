@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { devtools } from 'zustand/middleware';
 const shuffle = require('knuth-shuffle').knuthShuffle;
-// const tarot_interpretations = require('./tarot_interpretations.json');
+const tarot_interpretations = require('./tarot_interpretations.json');
 
 const REVERSED_CHANCE = 0.25;
 export const BACK_OF_CARD_NUMBER = 78;
@@ -15,8 +15,8 @@ interface Store {
   drawCard: () => void;
   shuffleDeck: () => void;
   back: () => void;
-  // TODO add whole interpretation 
-  getInterpretation: () => string;
+  // TODO add whole interpretation, don't use any
+  getInterpretation: () => any;
   isShowing: boolean;
 }
 const backCard: Card = {
@@ -47,7 +47,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
             })}
       }),
       back: () => set(({card: backCard, isShowing: false})),
-      getInterpretation: () => 'TODO',
+      getInterpretation: () => tarot_interpretations[get().card.number],
       isShowing: false,
     })
   )

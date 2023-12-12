@@ -769,7 +769,7 @@
                 "Indulging in hysteria or obsession"
             ]
         }, 
-        "name": "ace of cups", 
+        "name": "Ace of Cups", 
         "rank": 1, 
         "suit": "cups"
     }, 
@@ -804,7 +804,7 @@
                 "Deceiving yourself about your true orientation"
             ]
         }, 
-        "name": "two of cups", 
+        "name": "Two of Cups", 
         "rank": 2, 
         "suit": "cups"
     }, 
@@ -834,7 +834,7 @@
                 "Partying to a dangerous or unhealthy extent"
             ]
         }, 
-        "name": "three of cups", 
+        "name": "Three of Cups", 
         "rank": 3, 
         "suit": "cups"
     }, 
@@ -867,7 +867,7 @@
                 "Feeling everything should stay \"just like it is\""
             ]
         }, 
-        "name": "four of cups", 
+        "name": "Four of Cups", 
         "rank": 4, 
         "suit": "cups"
     }, 
@@ -904,7 +904,7 @@
                 "Allowing fear of failure to limit your efforts"
             ]
         }, 
-        "name": "five of cups", 
+        "name": "Five of Cups", 
         "rank": 5, 
         "suit": "cups"
     }, 
@@ -937,7 +937,7 @@
                 "Refusing to share a burden"
             ]
         }, 
-        "name": "six of cups", 
+        "name": "Six of Cups", 
         "rank": 6, 
         "suit": "cups"
     }, 
@@ -968,7 +968,7 @@
                 "Being controlled by fear"
             ]
         }, 
-        "name": "seven of cups", 
+        "name": "Seven of Cups", 
         "rank": 7, 
         "suit": "cups"
     }, 
@@ -1005,7 +1005,7 @@
                 "Threatening to quit as a strategy to get your way"
             ]
         }, 
-        "name": "eight of cups", 
+        "name": "Eight of Cups", 
         "rank": 8, 
         "suit": "cups"
     }, 
@@ -1038,7 +1038,7 @@
                 "Never being satisfied, no matter how much you have"
             ]
         }, 
-        "name": "nine of cups", 
+        "name": "Nine of Cups", 
         "rank": 9, 
         "suit": "cups"
     }, 
@@ -1068,7 +1068,7 @@
                 "Envying the achievements and happiness of others"
             ]
         }, 
-        "name": "ten of cups", 
+        "name": "Ten of Cups", 
         "rank": 10, 
         "suit": "cups"
     }, 
@@ -1101,7 +1101,7 @@
                 "Pretending to more romantic or spiritual experience than you possess"
             ]
         }, 
-        "name": "page of cups", 
+        "name": "Page of Cups", 
         "rank": "page", 
         "suit": "cups"
     }, 
@@ -1132,7 +1132,7 @@
                 "Hiding or ignoring intuitive insights"
             ]
         }, 
-        "name": "knight of cups", 
+        "name": "Knight of Cups", 
         "rank": "knight", 
         "suit": "cups"
     }, 
@@ -1163,7 +1163,7 @@
                 "Wallowing in emotionalism, sentiment, or self-pity"
             ]
         }, 
-        "name": "queen of cups", 
+        "name": "Queen of Cups", 
         "rank": "queen", 
         "suit": "cups"
     }, 
@@ -1193,7 +1193,7 @@
                 "Using emotional or spiritual leverage to exercise unhealthy control over others"
             ]
         }, 
-        "name": "king of cups", 
+        "name": "King of Cups", 
         "rank": "king", 
         "suit": "cups"
     }, 
@@ -1227,7 +1227,7 @@
                 "Making decisions without thinking through consequences"
             ]
         }, 
-        "name": "ace of swords", 
+        "name": "Ace of Swords", 
         "rank": 1, 
         "suit": "swords"
     }, 
@@ -1259,7 +1259,7 @@
                 "Preventing others from getting the information they need to make good decisions"
             ]
         }, 
-        "name": "two of swords", 
+        "name": "Two of Swords", 
         "rank": 2, 
         "suit": "swords"
     }, 
@@ -1291,7 +1291,7 @@
                 "Wearing your heart on your sleeve while carrying a chip on your shoulder"
             ]
         }, 
-        "name": "three of swords", 
+        "name": "Three of Swords", 
         "rank": 3, 
         "suit": "swords"
     }, 
@@ -1321,7 +1321,7 @@
                 "Allowing chaos and whimsy to dominate your thoughts"
             ]
         }, 
-        "name": "four of swords", 
+        "name": "Four of Swords", 
         "rank": 4, 
         "suit": "swords"
     }, 
@@ -1356,7 +1356,7 @@
                 "Gloating over victory"
             ]
         }, 
-        "name": "five of swords", 
+        "name": "Five of Swords", 
         "rank": 5, 
         "suit": "swords"
     }, 
@@ -1389,7 +1389,7 @@
                 "Believing the whole world should be like your small corner of it"
             ]
         }, 
-        "name": "six of swords", 
+        "name": "Six of Swords", 
         "rank": 6, 
         "suit": "swords"
     }, 
@@ -1420,7 +1420,7 @@
                 "Failing to examine your own motives and prejudices"
             ]
         }, 
-        "name": "seven of swords", 
+        "name": "Seven of Swords", 
         "rank": 7, 
         "suit": "swords"
     }, 
@@ -1456,7 +1456,7 @@
                 "Failing to look for a way out"
             ]
         }, 
-        "name": "eight of swords", 
+        "name": "Eight of Swords", 
         "rank": 8, 
         "suit": "swords"
     }, 
@@ -1490,7 +1490,7 @@
                 "Debating irreversible decisions"
             ]
         }, 
-        "name": "nine of swords", 
+        "name": "Nine of Swords", 
         "rank": 9, 
         "suit": "swords"
     }, 
@@ -1525,7 +1525,7 @@
                 "Deeply unhealthy thoughts"
             ]
         }, 
-        "name": "ten of swords", 
+        "name": "Ten of Swords", 
         "rank": 10, 
         "suit": "swords"
     }, 
@@ -1558,7 +1558,7 @@
                 "Rejecting the wise counsel of experienced teachers"
             ]
         }, 
-        "name": "page of swords", 
+        "name": "Page of Swords", 
         "rank": "page", 
         "suit": "swords"
     }, 
@@ -1596,7 +1596,7 @@
                 "Distorting evidence"
             ]
         }, 
-        "name": "knight of swords", 
+        "name": "Knight of Swords", 
         "rank": "knight", 
         "suit": "swords"
     }, 
@@ -1633,7 +1633,7 @@
                 "Failing to use the talent you've been given"
             ]
         }, 
-        "name": "queen of swords", 
+        "name": "Queen of Swords", 
         "rank": "queen", 
         "suit": "swords"
     }, 
@@ -1666,7 +1666,7 @@
                 "Wishing in vain you could take back what's been said"
             ]
         }, 
-        "name": "king of swords", 
+        "name": "King of Swords", 
         "rank": "king", 
         "suit": "swords"
     }, 
@@ -1702,7 +1702,7 @@
                 "Failing to take a stand"
             ]
         }, 
-        "name": "ace of wands", 
+        "name": "Ace of Wands", 
         "rank": 1, 
         "suit": "wands"
     }, 
@@ -1734,7 +1734,7 @@
                 "Disregarding the input of others"
             ]
         }, 
-        "name": "two of wands", 
+        "name": "Two of Wands", 
         "rank": 2, 
         "suit": "wands"
     }, 
@@ -1766,7 +1766,7 @@
                 "Failing to finish what you start"
             ]
         }, 
-        "name": "three of wands", 
+        "name": "Three of Wands", 
         "rank": 3, 
         "suit": "wands"
     }, 
@@ -1798,7 +1798,7 @@
                 "Refusing to do your part"
             ]
         }, 
-        "name": "four of wands", 
+        "name": "Four of Wands", 
         "rank": 4, 
         "suit": "wands"
     }, 
@@ -1829,7 +1829,7 @@
                 "Disrupting progress with an endless stream of pointless objections"
             ]
         }, 
-        "name": "five of wands", 
+        "name": "Five of Wands", 
         "rank": 5, 
         "suit": "wands"
     }, 
@@ -1864,7 +1864,7 @@
                 "Envying the achievements of others"
             ]
         }, 
-        "name": "six of wands", 
+        "name": "Six of Wands", 
         "rank": 6, 
         "suit": "wands"
     }, 
@@ -1895,7 +1895,7 @@
                 "Refusing to stand up for yourself and your beliefs"
             ]
         }, 
-        "name": "seven of wands", 
+        "name": "Seven of Wands", 
         "rank": 7, 
         "suit": "wands"
     }, 
@@ -1929,7 +1929,7 @@
                 "Refusing to re-evaluate a schedule or program, even when it's clearly no longer appropriate"
             ]
         }, 
-        "name": "eight of wands", 
+        "name": "Eight of Wands", 
         "rank": 8, 
         "suit": "wands"
     }, 
@@ -1965,7 +1965,7 @@
                 "Beating a dead horse"
             ]
         }, 
-        "name": "nine of wands", 
+        "name": "Nine of Wands", 
         "rank": 9, 
         "suit": "wands"
     }, 
@@ -1996,7 +1996,7 @@
                 "Over-extending yourself on a regular basis"
             ]
         }, 
-        "name": "ten of wands", 
+        "name": "Ten of Wands", 
         "rank": 10, 
         "suit": "wands"
     }, 
@@ -2027,7 +2027,7 @@
                 "Being so eager to \"do it yourself\" that you hinder your own progress"
             ]
         }, 
-        "name": "page of wands", 
+        "name": "Page of Wands", 
         "rank": "page", 
         "suit": "wands"
     }, 
@@ -2060,7 +2060,7 @@
                 "Beginning many projects without finishing any"
             ]
         }, 
-        "name": "knight of wands", 
+        "name": "Knight of Wands", 
         "rank": "knight", 
         "suit": "wands"
     }, 
@@ -2089,7 +2089,7 @@
                 "Disrupting group activities as a means of feeding your own ego"
             ]
         }, 
-        "name": "queen of wands", 
+        "name": "Queen of Wands", 
         "rank": "queen", 
         "suit": "wands"
     }, 
@@ -2118,7 +2118,7 @@
                 "Lording it over others"
             ]
         }, 
-        "name": "king of wands", 
+        "name": "King of Wands", 
         "rank": "king", 
         "suit": "wands"
     }, 
@@ -2150,7 +2150,7 @@
                 "Taking what you want without concern for the needs of others"
             ]
         }, 
-        "name": "ace of coins", 
+        "name": "Ace of Pentacles", 
         "rank": 1, 
         "suit": "coins"
     }, 
@@ -2183,7 +2183,7 @@
                 "Engaging in behavior with no regard for how your body or bankbook will be impacted"
             ]
         }, 
-        "name": "two of coins", 
+        "name": "Two of Pentacles", 
         "rank": 2, 
         "suit": "coins"
     }, 
@@ -2217,7 +2217,7 @@
                 "Failing to abide by a clearly-outlined agreement with yourself or others"
             ]
         }, 
-        "name": "three of coins", 
+        "name": "Three of Pentacles", 
         "rank": 3, 
         "suit": "coins"
     }, 
@@ -2250,7 +2250,7 @@
                 "Failing to be a good manager of the blessings you've been given"
             ]
         }, 
-        "name": "four of coins", 
+        "name": "Four of Pentacles", 
         "rank": 4, 
         "suit": "coins"
     }, 
@@ -2284,7 +2284,7 @@
                 "Wallowing in misery"
             ]
         }, 
-        "name": "five of coins", 
+        "name": "Five of Pentacles", 
         "rank": 5, 
         "suit": "coins"
     }, 
@@ -2318,7 +2318,7 @@
                 "Ignoring obligations and commitments"
             ]
         }, 
-        "name": "six of coins", 
+        "name": "Six of Pentacles", 
         "rank": 6, 
         "suit": "coins"
     }, 
@@ -2351,7 +2351,7 @@
                 "Refusing to take part in a project, then whining about the quality of the outcome"
             ]
         }, 
-        "name": "seven of coins", 
+        "name": "Seven of Pentacles", 
         "rank": 7, 
         "suit": "coins"
     }, 
@@ -2386,7 +2386,7 @@
                 "Rejecting opportunities to learn more about your craft"
             ]
         }, 
-        "name": "eight of coins", 
+        "name": "Eight of Pentacles", 
         "rank": 8, 
         "suit": "coins"
     }, 
@@ -2417,7 +2417,7 @@
                 "Always craving more"
             ]
         }, 
-        "name": "nine of coins", 
+        "name": "Nine of Pentacles", 
         "rank": 9, 
         "suit": "coins"
     }, 
@@ -2449,7 +2449,7 @@
                 "Always asking, \"What's in it for me?\""
             ]
         }, 
-        "name": "ten of coins", 
+        "name": "Ten of Pentacles", 
         "rank": 10, 
         "suit": "coins"
     }, 
@@ -2482,7 +2482,7 @@
                 "Using wealth or beauty as an excuse for not having to learn and grow"
             ]
         }, 
-        "name": "page of coins", 
+        "name": "Page of Pentacles", 
         "rank": "page", 
         "suit": "coins"
     }, 
@@ -2518,7 +2518,7 @@
                 "Copying another's work and claiming it as your own"
             ]
         }, 
-        "name": "knight of coins", 
+        "name": "Knight of Pentacles", 
         "rank": "knight", 
         "suit": "coins"
     }, 
@@ -2550,7 +2550,7 @@
                 "Allowing a feeling of entitlement to distort your gratitude for what you're given"
             ]
         }, 
-        "name": "queen of coins", 
+        "name": "Queen of Pentacles", 
         "rank": "queen", 
         "suit": "coins"
     }, 
@@ -2583,7 +2583,7 @@
                 "Bossing others around, especially when you're not empowered to do so"
             ]
         }, 
-        "name": "king of coins", 
+        "name": "King of Pentacles", 
         "rank": "king", 
         "suit": "coins"
     }

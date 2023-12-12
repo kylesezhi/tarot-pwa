@@ -1,12 +1,9 @@
 # TODO
 
-1. Animate flip card
-  - https://codesandbox.io/p/sandbox/flip-card-cju2d?file=%2Fsrc%2Findex.tsx
-1. Move arrow to the left of card
+1. Show name of card below card
 1. Size of card - make bigger on mobile, smaller in web
 1. Animate click/tap card
 1. Flip back animation
-1. Fix visual glitch when showing upside down card
 1. Show interpretation data below card
 1. Fade in interpretation data
   - https://codesandbox.io/p/sandbox/image-fade-1t9hh?file=%2Fsrc%2Findex.tsx
