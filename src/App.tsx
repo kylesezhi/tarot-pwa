@@ -2,10 +2,10 @@ import React from 'react';
 import TarotCardContainer from './containers/TarotCardContainer/TarotCardContainer';
 import BackChevronButtonContainer from './containers/BackChevronButtonContainer/BackChevronButtonContainer'
 import './App.css';
-import {useTarotStore, CARD_BACK} from './store';
+import {useTarotStore, BACK_OF_CARD_NUMBER} from './store';
 
 function App() {
-  const enabled = useTarotStore((state) => state.cardNumber) !== CARD_BACK;
+  const enabled = useTarotStore((state) => state.cardNumber) !== BACK_OF_CARD_NUMBER;
   return (
     <div className="App">
       <header className="App-header">

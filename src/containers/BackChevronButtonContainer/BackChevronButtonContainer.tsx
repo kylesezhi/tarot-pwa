@@ -1,7 +1,7 @@
 import React from 'react';
 import './BackChevronButtonContainer.css';
 import BackChevron from '../../components/BackChevron/BackChevron';
-import {useTarotStore, CARD_BACK} from '../../store';
+import {useTarotStore, BACK_OF_CARD_NUMBER} from '../../store';
 
 function BackChevronButtonContainer({enabled = false}) {
   const setCardNumber = useTarotStore((state) => state.setCardNumber)
@@ -9,7 +9,7 @@ function BackChevronButtonContainer({enabled = false}) {
     if (!enabled) {
       return;
     }
-    setCardNumber(CARD_BACK);
+    setCardNumber(BACK_OF_CARD_NUMBER);
   };
   const style = {
     cursor: enabled ? 'pointer' : 'auto'
