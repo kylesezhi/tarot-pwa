@@ -1,6 +1,5 @@
 # TODO
 
-1. Show zustand in devtools
 1. Fix visual glitch when showing upside down card
 1. Move arrow to the left of card
 1. Size of card - make bigger on mobile, smaller in web

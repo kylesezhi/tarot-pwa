@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-// import { devtools } from 'zustand/middleware';
+import { devtools } from 'zustand/middleware';
 const shuffle = require('knuth-shuffle').knuthShuffle;
 // const tarot_interpretations = require('./tarot_interpretations.json');
 
@@ -23,7 +23,8 @@ const backCard: Card = {
   reversed: false
 }
 
-export const useTarotStore = create<Store>(
+export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
+  devtools(
   (set) => ({
     card: backCard,
     deck: Array.from({ length: 78 }, (_, index) => ({number: index, reversed: false})),
@@ -46,4 +47,5 @@ export const useTarotStore = create<Store>(
     back: () => set(({card: backCard})),
     getInterpretation: () => 'hai'
   })
+  )
 )
