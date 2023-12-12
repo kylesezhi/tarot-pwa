@@ -1,13 +1,14 @@
 import { create } from 'zustand'
 
+export const CARD_BACK = 78;
 interface Store {
-  bears: number;
-  increasePopulation: () => void;
-  removeAllBears: () => void;
+  cardNumber: number;
+  setCardNumber: (cardNumber: number) => void;
+  showBack: () => void;
 }
 
-const useTarotStore = create<Store>((set) => ({
-  bears: 0,
-  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
-  removeAllBears: () => set({ bears: 0 }),
+export const useTarotStore = create<Store>((set) => ({
+  cardNumber: CARD_BACK,
+  setCardNumber: (cardNumber: number) => set({ cardNumber }),
+  showBack: () => set({ cardNumber: 78 }),
 }))
