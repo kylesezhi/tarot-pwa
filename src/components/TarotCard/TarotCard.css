@@ -1,4 +1,19 @@
-.tarot-card {
+.tarot-cards-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.tarot-image {
+  position: relative;
   height: 90vmin;
   border-radius: 10px;
+}
+
+.tarot-card {
+  position: absolute;
+  height: 90vmin;
+  border-radius: 10px;
+  will-change: transform, opacity;
 }
