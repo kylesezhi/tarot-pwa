@@ -1,0 +1,6 @@
+.keywords {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  gap: 10px;
+}

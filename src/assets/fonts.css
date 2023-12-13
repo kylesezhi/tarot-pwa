@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Lora';
+  src: url('./Lora/Lora-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Heebo';
+  src: url('./Heebo/Heebo-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

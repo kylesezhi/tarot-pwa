@@ -2,14 +2,16 @@ import React, {useEffect} from 'react';
 import TarotCardContainer from './containers/TarotCardContainer/TarotCardContainer';
 import BackChevronButtonContainer from './containers/BackChevronButtonContainer/BackChevronButtonContainer';
 import Title from './components/Title/Title';
+import Keywords from './components/Keywords/Keywords';
 import './App.css';
 import {useTarotStore} from './store';
-import './assets/Lora/fonts.css';
+import './assets/fonts.css';
 
 function App() {
   const shuffleDeck = useTarotStore((state) => state.shuffleDeck);
   const isShowing = useTarotStore((state) => state.isShowing);
   const title = useTarotStore((state) => state.getTitle)();
+  const keywords = useTarotStore((state) => state.getKeywords)();
 
   // Shuffle the deck on initial app load
   useEffect(shuffleDeck, [shuffleDeck])
@@ -21,6 +23,7 @@ function App() {
         <TarotCardContainer />
       </div>
       <Title title={title} show={isShowing} />
+      <Keywords>{keywords}</Keywords>
     </div>
   );
 }
