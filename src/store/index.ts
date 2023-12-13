@@ -17,6 +17,7 @@ interface Store {
   back: () => void;
   getTitle: () => string;
   getKeywords: () => Array<string>;
+  getDescription: () => string;
   isShowing: boolean;
 }
 const backCard: Card = {
@@ -56,6 +57,10 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
         return interpretation ? interpretation.keywords : [];
       },
       isShowing: false,
+      getDescription: () => {
+        const interpretation = tarot_interpretations[get().card.number];
+        return interpretation ? interpretation.fortune_telling[0] : '';
+      },
     })
   )
 )

@@ -6,8 +6,15 @@
 }
 
 @font-face {
-  font-family: 'Heebo';
+  font-family: 'HeeboMedium';
   src: url('./Heebo/Heebo-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HeeboRegular';
+  src: url('./Heebo/Heebo-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

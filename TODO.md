@@ -1,6 +1,7 @@
 # TODO
 
-1. Show interpretation data below card
+1. Fix reversed keywords
+1. Fix description - the data isn't that good
 1. Fade in interpretation data
   - https://codesandbox.io/p/sandbox/image-fade-1t9hh?file=%2Fsrc%2Findex.tsx
 1. Size of card - make bigger on mobile, smaller in web
@@ -9,6 +10,6 @@
 1. Fade in on initial load
   - https://codesandbox.io/p/sandbox/image-fade-1t9hh?file=%2Fsrc%2Findex.tsx
   - https://codesandbox.io/p/sandbox/chaining-transition-and-a-spring-q6ffu?file=%2Fsrc%2Findex.tsx
-1. Ensure offline works
 1. Get back button to work in mobile - react router
 1. Use state machine
+1. Ensure offline works
