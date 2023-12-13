@@ -16,7 +16,7 @@ interface Store {
   shuffleDeck: () => void;
   back: () => void;
   // TODO add whole interpretation, don't use any
-  getInterpretation: () => any;
+  getTitle: () => string;
   isShowing: boolean;
 }
 const backCard: Card = {
@@ -47,7 +47,10 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
             })}
       }),
       back: () => set(({card: backCard, isShowing: false})),
-      getInterpretation: () => tarot_interpretations[get().card.number],
+      getTitle: () => {
+        const interpretation = tarot_interpretations[get().card.number];
+        return interpretation ? interpretation.name : '';
+      },
       isShowing: false,
     })
   )

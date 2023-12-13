@@ -8,8 +8,8 @@ import './assets/Lora/fonts.css';
 
 function App() {
   const shuffleDeck = useTarotStore((state) => state.shuffleDeck);
-  const isShowing = useTarotStore((state) => state.isShowing)
-  const getInterpretation = useTarotStore((state) => state.getInterpretation)
+  const isShowing = useTarotStore((state) => state.isShowing);
+  const title = useTarotStore((state) => state.getTitle)();
 
   // Shuffle the deck on initial app load
   useEffect(shuffleDeck, [shuffleDeck])
@@ -20,7 +20,7 @@ function App() {
         <BackChevronButtonContainer enabled={isShowing} />
         <TarotCardContainer />
       </div>
-      <Title title={getInterpretation() && getInterpretation().name} show={isShowing} />
+      <Title title={title} show={isShowing} />
     </div>
   );
 }
