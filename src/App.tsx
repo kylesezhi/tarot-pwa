@@ -20,7 +20,7 @@ function App() {
         <BackChevronButtonContainer enabled={isShowing} />
         <TarotCardContainer />
       </div>
-      <Title title={getInterpretation() && getInterpretation().name} show />
+      <Title title={getInterpretation() && getInterpretation().name} show={isShowing} />
     </div>
   );
 }

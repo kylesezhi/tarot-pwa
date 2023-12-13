@@ -6,9 +6,9 @@ interface TitleProps {
   show: boolean
 }
 
-function Title({title = '', show = false}: TitleProps) {
+function Title({title = 'temp', show = false}: TitleProps) {
   return (
-    <div className="title">
+    <div className="title" style={{opacity: show ? 0.7 : 0}}>
       {title}
     </div>
   )

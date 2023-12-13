@@ -30,7 +30,7 @@ function TarotCard({number = 78, reversed = false, isShowing}: TarotProps) {
   }
 
   return (
-    <div className="tarot-cards-container">
+    <div className="tarot-sides-container">
       <animated.div className="tarot-card" style={frontStyle}>
         <img src={tarotImage} className="tarot-image" alt="tarot-card" style={reversedStyle} />
       </animated.div>

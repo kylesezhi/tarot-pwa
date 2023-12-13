@@ -1,6 +1,5 @@
 # TODO
 
-1. Show name of card below card
 1. Size of card - make bigger on mobile, smaller in web
 1. Animate click/tap card
 1. Flip back animation
