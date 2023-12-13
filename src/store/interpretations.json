@@ -68,8 +68,29 @@
   {
     "name": "The Lovers",
     "keywords": {
-      "upright": ["Love, unity, harmony, partnership, choices, decisions, commitment, attraction, trust, deep connection"],
-      "reversed": ["Disharmony, imbalance, doubt, indecision, temptation, lack of commitment, betrayal, separation, self-love"]
+      "upright": [
+          "Love",
+          "unity",
+          "harmony",
+          "partnership",
+          "choices",
+          "decisions",
+          "commitment",
+          "attraction",
+          "trust",
+          "deep connection"
+      ],
+      "reversed": [
+          "Disharmony",
+          "imbalance",
+          "doubt",
+          "indecision",
+          "temptation",
+          "lack of commitment",
+          "betrayal",
+          "separation",
+          "self-love"
+      ]
     },
     "description": {
       "upright": "The Lovers represent love in all its forms, from romantic and platonic to self-love. It signifies strong bonds, deep connections, and harmonious relationships. It can also represent a crossroads, where you are faced with a choice between two paths or partners. This decision should not be taken lightly, as it will have lasting ramifications. Upright, the Lovers card encourages you to be open to love and commitment, to trust your intuition, and to make decisions based on your heart.",
