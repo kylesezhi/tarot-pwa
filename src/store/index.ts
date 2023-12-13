@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { devtools } from 'zustand/middleware';
 const shuffle = require('knuth-shuffle').knuthShuffle;
-const tarot_interpretations = require('./tarot_interpretations.json');
+const tarot_interpretations = require('./interpretations.json');
 
 const REVERSED_CHANCE = 0.25;
 export const BACK_OF_CARD_NUMBER = 78;
@@ -53,13 +53,23 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
         return interpretation ? interpretation.name : '';
       },
       getKeywords: () => {
-        const interpretation = tarot_interpretations[get().card.number];
-        return interpretation ? interpretation.keywords : [];
+        const card = get().card;
+        const orientation = card.reversed ? 'reversed' : 'upright';
+        const interpretation = tarot_interpretations[card.number];
+        if (!interpretation) {
+          return [];
+        }
+        return interpretation.keywords[orientation];
       },
       isShowing: false,
       getDescription: () => {
+        const card = get().card;
+        const orientation = card.reversed ? 'reversed' : 'upright';
         const interpretation = tarot_interpretations[get().card.number];
-        return interpretation ? interpretation.fortune_telling[0] : '';
+        if (!interpretation) {
+          return [];
+        }
+        return interpretation.description[orientation];
       },
     })
   )

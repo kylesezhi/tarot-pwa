@@ -1,7 +1,6 @@
 # TODO
 
-1. Fix reversed keywords
-1. Fix description - the data isn't that good
+1. Add "REVERSED" badge when applicable
 1. Fade in interpretation data
   - https://codesandbox.io/p/sandbox/image-fade-1t9hh?file=%2Fsrc%2Findex.tsx
 1. Size of card - make bigger on mobile, smaller in web
