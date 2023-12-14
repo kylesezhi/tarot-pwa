@@ -13,3 +13,5 @@
 1. Get back button to work in mobile - react router
 1. Use state machine
 1. Ensure offline works
+1. Share button
+1. View all cards menu
