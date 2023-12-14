@@ -1,5 +1,5 @@
-Ace of Pentacles
-Fill out the information for the tarot card in the title. Give a JSON object in the following shape. Do NOT add or remove any key-value pairs in this object shape. Repond with ONLY the JSON, no other text.
+King of Wands
+Fill out the information for the tarot card in the title. Give a JSON object in the following shape. Do NOT add or remove any key-value pairs in this object shape. Repond with ONLY the JSON, no other text. Write them from the first person, as in "I ..." or "My ...", etc..
 {
   "name": "name of card",
   "affirmations": {

@@ -7,6 +7,7 @@ import Description from './components/Description/Description';
 import './App.css';
 import {useTarotStore} from './store';
 import './assets/fonts.css';
+import AffirmationContainer from './containers/AffirmationContainer/AffirmationContainer';
 
 function App() {
   const shuffleDeck = useTarotStore((state) => state.shuffleDeck);
@@ -24,6 +25,7 @@ function App() {
         <BackChevronButtonContainer enabled={isShowing} />
         <TarotCardContainer />
       </div>
+      <AffirmationContainer />
       <Title title={title} show={isShowing} />
       <Keywords>{keywords}</Keywords>
       <Description show>{description}</Description>

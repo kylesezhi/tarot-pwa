@@ -18,6 +18,7 @@ interface Store {
   getTitle: () => string;
   getKeywords: () => Array<string>;
   getDescription: () => string;
+  getAffirmation: () => string;
   isShowing: boolean;
 }
 const backCard: Card = {
@@ -65,12 +66,22 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
       getDescription: () => {
         const card = get().card;
         const orientation = card.reversed ? 'reversed' : 'upright';
-        const interpretation = tarot_interpretations[get().card.number];
+        const interpretation = tarot_interpretations[card.number];
         if (!interpretation) {
           return [];
         }
         return interpretation.description[orientation];
       },
+      getAffirmation: () => {
+        const card = get().card;
+        const orientation = card.reversed ? 'reversed' : 'upright';
+        const interpretation = tarot_interpretations[card.number];
+        if (!interpretation) {
+          return [];
+        }
+        const affirmations = interpretation.affirmations[orientation];
+        return affirmations[Math.floor(Math.random() * affirmations.length)];
+      }
     })
   )
 )

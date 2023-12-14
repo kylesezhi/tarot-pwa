@@ -9,7 +9,7 @@ interface KeywordsProps {
 function Keywords({children}: KeywordsProps) {
   return (
     <div className="keywords">
-      {children.map((keyword: string) => <Keyword keyword={keyword} />)}
+      {children.map((keyword: string, index: number) => <Keyword key={index} keyword={keyword} />)}
     </div>
   )
 }
