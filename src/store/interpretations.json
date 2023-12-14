@@ -319,8 +319,26 @@
   {
     "name": "Six of Cups",
     "keywords": {
-      "upright": ["Nostalgia, innocence, childhood, happiness, healing, generosity, compassion, forgiveness, reconnect with the past, inner child"],
-      "reversed": ["Immaturity, escapism, living in the past, clinging to the past, unresolved issues from childhood, lack of emotional depth"]
+      "upright": [
+        "Nostalgia",
+        "innocence",
+        "childhood",
+        "happiness",
+        "healing",
+        "generosity",
+        "compassion",
+        "forgiveness",
+        "reconnect with the past",
+        "inner child"
+      ],
+      "reversed": [
+        "Immaturity",
+        "escapism",
+        "living in the past",
+        "clinging to the past",
+        "unresolved issues from childhood",
+        "lack of emotional depth"
+      ]
     },
     "description": {
       "upright": "The Six of Cups is a card of nostalgia, innocence, and the joy of childhood. It reminds us of simpler times and the importance of cherishing our memories. This card can also indicate a time of healing and forgiveness, as we let go of past hurts and move forward with open hearts. The Six of Cups encourages us to reconnect with our inner child and rediscover the joy and wonder of life. When this card appears in a reading, it may be time to reach out to old friends or family members, or to revisit places that hold special memories. It is also a reminder to be kind and compassionate to ourselves and others.",
@@ -708,8 +726,20 @@
   {
   "name": "Ten of Wands",
   "keywords": {
-  "upright": ["Burden, Responsibility, Overwork, Exhaustion, Struggle"],
-  "reversed": ["Delegation, Release, Relief, Renewal, Completion"]
+    "upright": [
+      "Burden",
+      "Responsibility",
+      "Overwork",
+      "Exhaustion",
+      "Struggle"
+    ],
+    "reversed": [
+      "Delegation",
+      "Release",
+      "Relief",
+      "Renewal",
+      "Completion"
+    ]
   },
   "description": {
   "upright": "The Ten of Wands represents feeling weighed down by responsibility, overwork, or burdens. It suggests that you are feeling overwhelmed and struggling to keep up with your commitments. You may be feeling exhausted and depleted, both physically and emotionally. This card can also indicate a lack of motivation or direction. In the upright position, the Ten of Wands encourages you to take stock of your situation and delegate tasks where possible. It's important to learn to say no and prioritize your own well-being. Remember, you don't have to do everything yourself. Seek support from others and find ways to lighten your load.",
