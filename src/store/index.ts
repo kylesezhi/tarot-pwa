@@ -3,7 +3,7 @@ import { devtools } from 'zustand/middleware';
 const shuffle = require('knuth-shuffle').knuthShuffle;
 const tarot_interpretations = require('./interpretations.json');
 
-const REVERSED_CHANCE = 0.25;
+const REVERSED_CHANCE = 0.4;
 export const BACK_OF_CARD_NUMBER = 78;
 type Card = {
   number: number;
