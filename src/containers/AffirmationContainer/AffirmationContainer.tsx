@@ -9,7 +9,7 @@ function AffirmationContainer({enabled = false}) {
   const isShowing = useTarotStore((state) => state.isShowing);
   const {opacity} = useSpring({
     opacity: isShowing ? 1 : 0,
-    config: config.gentle,
+    config: config.molasses,
   });
   const style = {
     opacity,
