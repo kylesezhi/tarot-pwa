@@ -13,7 +13,6 @@
 
 .tarot-card {
   position: absolute;
-  height: 90vmin;
   border-radius: 10px;
   will-change: transform, opacity;
 }

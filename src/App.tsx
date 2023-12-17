@@ -22,10 +22,12 @@ function App() {
   return (
     <div className="App">
       <div className="App-card">
+        {/* TODO move isShowing to container */}
         <BackChevronButtonContainer enabled={isShowing} />
         <TarotCardContainer />
       </div>
       <AffirmationContainer />
+      {/* TODO make containers for these components */}
       <Title title={title} show={isShowing} />
       <Keywords>{keywords}</Keywords>
       <Description show>{description}</Description>

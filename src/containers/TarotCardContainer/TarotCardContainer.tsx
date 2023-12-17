@@ -9,7 +9,7 @@ function TarotCardContainer() {
   const isShowing = useTarotStore((state) => state.isShowing)
 
   return (
-    <div onClick={drawCard} className='tarot-card-container' >
+    <div onClick={drawCard} className='tarot-card-container'>
       <TarotCard number={card.number} reversed={card.reversed} isShowing={isShowing} />
     </div>
   )
