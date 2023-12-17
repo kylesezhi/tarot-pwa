@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSpring, animated, config } from '@react-spring/web';
 import './AffirmationContainer.css';
 import Affirmation from '../../components/Affirmation/Affirmation';
 import {useTarotStore} from '../../store';
@@ -6,11 +7,18 @@ import {useTarotStore} from '../../store';
 function AffirmationContainer({enabled = false}) {
   const affirmation = useTarotStore((state) => state.getAffirmation)()
   const isShowing = useTarotStore((state) => state.isShowing);
+  const {opacity} = useSpring({
+    opacity: isShowing ? 1 : 0,
+    config: config.gentle,
+  });
+  const style = {
+    opacity,
+  }
 
   return (
-    <div className='affirmation-container' >
+    <animated.div className='affirmation-container' style={style}>
       <Affirmation affirmation={affirmation} show={isShowing} />
-    </div>
+    </animated.div>
   )
 }
 
