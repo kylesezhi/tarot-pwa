@@ -22,8 +22,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-card">
-        {/* TODO move isShowing to container */}
-        <BackChevronButtonContainer enabled={isShowing} />
+        <BackChevronButtonContainer />
         <TarotCardContainer />
       </div>
       <AffirmationContainer />
