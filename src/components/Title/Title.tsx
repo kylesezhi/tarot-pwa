@@ -2,13 +2,12 @@ import React from 'react';
 import './Title.css';
 
 interface TitleProps {
-  title: string,
-  show: boolean
+  title: string
 }
 
-function Title({title, show = false}: TitleProps) {
+function Title({title}: TitleProps) {
   return (
-    <div className="title" style={{opacity: show ? 0.7 : 0}}>
+    <div className="title">
       {title}
     </div>
   )

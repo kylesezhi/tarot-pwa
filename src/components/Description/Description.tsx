@@ -3,12 +3,11 @@ import './Description.css';
 
 interface DescriptionProps {
   children: string,
-  show: boolean
 }
 
-function Description({children, show = false}: DescriptionProps) {
+function Description({children}: DescriptionProps) {
   return (
-    <div className="description" style={{opacity: show ? 0.7 : 0}}>
+    <div className="description">
       {children}
     </div>
   )

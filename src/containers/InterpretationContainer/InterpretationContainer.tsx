@@ -11,11 +11,15 @@ function InterpretationContainer() {
   const description = useTarotStore((state) => state.getDescription)();
   const isShowing = useTarotStore((state) => state.isShowing);
 
+  const style = {
+    opacity: isShowing ? '1': '0'
+  }
+
   return (
-    <div>
-      <Title title={title} show={isShowing} />
+    <div style={style}>
+      <Title title={title} />
       <Keywords>{keywords}</Keywords>
-      <Description show>{description}</Description>
+      <Description>{description}</Description>
     </div>
   )
 }
