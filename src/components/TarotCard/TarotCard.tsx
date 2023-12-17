@@ -13,12 +13,16 @@ function TarotCard({number = 78, reversed = false, isShowing}: TarotProps) {
   const tarotImage = require(`./assets/${number}.webp`);
 
   const [load, setLoad] = useState(false);
-  useEffect(() => setLoad(true), []);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoad(true);
+    }, 1000); // Delay by 2 seconds (2000 milliseconds)
+  }, []);
 
   const { transform, opacity, height } = useSpring({
     opacity: !load ? 0 : isShowing ? 0 : 1,
     transform: `perspective(900px) rotateY(${!isShowing ? 180 : 0}deg)`,
-    height: load ? '90vmin' : '50vmin',
+    height: load ? '90vmin' : '40vmin',
     config: { mass: 10, tension: 500, friction: 80 },
   });
   const frontStyle = {
