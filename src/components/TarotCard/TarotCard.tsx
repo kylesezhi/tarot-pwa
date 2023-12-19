@@ -21,14 +21,13 @@ function TarotCard({
   useEffect(() => {
     setTimeout(() => {
       setLoad(true);
-    }, 1000); // Delay by 2 seconds (2000 milliseconds)
+    }, 500);
   }, []);
 
   const { transform, opacity, height } = useSpring({
     opacity: !load ? 0 : isCardShowing ? 0 : 1,
     transform: `perspective(900px) rotateY(${!isCardShowing ? 180 : 0}deg)`,
     height: load ? "90vmin" : "40vmin",
-    // config: { mass: 10, tension: 500, friction: 80 },
     config: config.molasses,
   });
   const frontStyle = {
