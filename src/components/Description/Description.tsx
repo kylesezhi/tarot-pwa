@@ -1,16 +1,12 @@
-import React from 'react';
-import './Description.css';
+import React from "react";
+import "./Description.css";
 
 interface DescriptionProps {
-  children: string,
+  children: string;
 }
 
-function Description({children}: DescriptionProps) {
-  return (
-    <div className="description">
-      {children}
-    </div>
-  )
+function Description({ children }: DescriptionProps) {
+  return <div className="description">{children}</div>;
 }
 
 export default Description;

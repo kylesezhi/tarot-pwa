@@ -1,16 +1,12 @@
-import React from 'react';
-import './Title.css';
+import React from "react";
+import "./Title.css";
 
 interface TitleProps {
-  title: string
+  title: string;
 }
 
-function Title({title}: TitleProps) {
-  return (
-    <div className="title">
-      {title}
-    </div>
-  )
+function Title({ title }: TitleProps) {
+  return <div className="title">{title}</div>;
 }
 
 export default Title;

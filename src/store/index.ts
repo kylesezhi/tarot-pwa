@@ -1,17 +1,17 @@
-import { create } from 'zustand'
-import { devtools } from 'zustand/middleware';
-const shuffle = require('knuth-shuffle').knuthShuffle;
-const tarot_interpretations = require('./interpretations.json');
+import { create } from "zustand";
+import { devtools } from "zustand/middleware";
+const shuffle = require("knuth-shuffle").knuthShuffle;
+const tarot_interpretations = require("./interpretations.json");
 
 const REVERSED_CHANCE = 0.4;
 export const BACK_OF_CARD_NUMBER = 78;
 type Card = {
   number: number;
   reversed: boolean;
-}
+};
 interface Store {
   card: Card;
-  deck: Array<Card>,
+  deck: Array<Card>;
   drawCard: () => void;
   shuffleDeck: () => void;
   back: () => void;
@@ -23,15 +23,18 @@ interface Store {
 }
 const backCard: Card = {
   number: BACK_OF_CARD_NUMBER,
-  reversed: false
-}
+  reversed: false,
+};
 
 export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
-  devtools(
-    (set, get) => ({
-      card: backCard,
-      deck: Array.from({ length: 78 }, (_, index) => ({number: index, reversed: false})),
-      drawCard: () => set(({deck, card}) => {
+  devtools((set, get) => ({
+    card: backCard,
+    deck: Array.from({ length: 78 }, (_, index) => ({
+      number: index,
+      reversed: false,
+    })),
+    drawCard: () =>
+      set(({ deck, card }) => {
         if (card.number !== BACK_OF_CARD_NUMBER) {
           return {};
         }
@@ -40,48 +43,48 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
           isShowing: true,
         };
       }),
-      shuffleDeck: () => set((state) => {
+    shuffleDeck: () =>
+      set((state) => {
         return {
-          deck: shuffle(state.deck.slice(0))
-            .map((card: Card) => {
-              card.reversed = Math.random() < REVERSED_CHANCE;
-              return card;
-            })}
+          deck: shuffle(state.deck.slice(0)).map((card: Card) => {
+            card.reversed = Math.random() < REVERSED_CHANCE;
+            return card;
+          }),
+        };
       }),
-      back: () => set(({card: backCard, isShowing: false})),
-      getTitle: () => {
-        const interpretation = tarot_interpretations[get().card.number];
-        return interpretation ? interpretation.name : '';
-      },
-      getKeywords: () => {
-        const card = get().card;
-        const orientation = card.reversed ? 'reversed' : 'upright';
-        const interpretation = tarot_interpretations[card.number];
-        if (!interpretation) {
-          return [];
-        }
-        return interpretation.keywords[orientation];
-      },
-      isShowing: false,
-      getDescription: () => {
-        const card = get().card;
-        const orientation = card.reversed ? 'reversed' : 'upright';
-        const interpretation = tarot_interpretations[card.number];
-        if (!interpretation) {
-          return [];
-        }
-        return interpretation.description[orientation];
-      },
-      getAffirmation: () => {
-        const card = get().card;
-        const orientation = card.reversed ? 'reversed' : 'upright';
-        const interpretation = tarot_interpretations[card.number];
-        if (!interpretation) {
-          return [];
-        }
-        const affirmations = interpretation.affirmations[orientation];
-        return affirmations[Math.floor(Math.random() * affirmations.length)];
+    back: () => set({ card: backCard, isShowing: false }),
+    getTitle: () => {
+      const interpretation = tarot_interpretations[get().card.number];
+      return interpretation ? interpretation.name : "";
+    },
+    getKeywords: () => {
+      const card = get().card;
+      const orientation = card.reversed ? "reversed" : "upright";
+      const interpretation = tarot_interpretations[card.number];
+      if (!interpretation) {
+        return [];
       }
-    })
-  )
-)
+      return interpretation.keywords[orientation];
+    },
+    isShowing: false,
+    getDescription: () => {
+      const card = get().card;
+      const orientation = card.reversed ? "reversed" : "upright";
+      const interpretation = tarot_interpretations[card.number];
+      if (!interpretation) {
+        return [];
+      }
+      return interpretation.description[orientation];
+    },
+    getAffirmation: () => {
+      const card = get().card;
+      const orientation = card.reversed ? "reversed" : "upright";
+      const interpretation = tarot_interpretations[card.number];
+      if (!interpretation) {
+        return [];
+      }
+      const affirmations = interpretation.affirmations[orientation];
+      return affirmations[Math.floor(Math.random() * affirmations.length)];
+    },
+  })),
+);

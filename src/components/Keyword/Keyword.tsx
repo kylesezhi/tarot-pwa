@@ -1,16 +1,12 @@
-import React from 'react';
-import './Keyword.css';
+import React from "react";
+import "./Keyword.css";
 
 interface TitleProps {
-  keyword: string,
+  keyword: string;
 }
 
-function Keyword({keyword}: TitleProps) {
-  return (
-    <div className="keyword">
-      {keyword}
-    </div>
-  )
+function Keyword({ keyword }: TitleProps) {
+  return <div className="keyword">{keyword}</div>;
 }
 
 export default Keyword;
