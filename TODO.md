@@ -1,6 +1,5 @@
 # TODO
 
-1. Chain first flip, then interpretation fade in
 1. View all cards menu
 1. Add "REVERSED" badge when applicable
 1. Size of card - make bigger on mobile, smaller in web

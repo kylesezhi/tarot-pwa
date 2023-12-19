@@ -16,6 +16,7 @@ function InterpretationContainer() {
   const { opacity, paddingTop } = useSpring({
     opacity: isShowing ? 1 : 0,
     paddingTop: isShowing ? "0" : "50px",
+    delay: 1000,
     config: config.molasses,
   });
 
