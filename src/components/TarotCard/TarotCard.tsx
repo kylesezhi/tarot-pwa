@@ -6,10 +6,14 @@ import backImage from "./assets/78.webp";
 interface TarotProps {
   number: number;
   reversed: boolean;
-  isShowing: boolean;
+  isCardShowing: boolean;
 }
 
-function TarotCard({ number = 78, reversed = false, isShowing }: TarotProps) {
+function TarotCard({
+  number = 78,
+  reversed = false,
+  isCardShowing,
+}: TarotProps) {
   const tarotImage = require(`./assets/${number}.webp`);
 
   // Fade in card on load
@@ -21,14 +25,14 @@ function TarotCard({ number = 78, reversed = false, isShowing }: TarotProps) {
   }, []);
 
   const { transform, opacity, height } = useSpring({
-    opacity: !load ? 0 : isShowing ? 0 : 1,
-    transform: `perspective(900px) rotateY(${!isShowing ? 180 : 0}deg)`,
+    opacity: !load ? 0 : isCardShowing ? 0 : 1,
+    transform: `perspective(900px) rotateY(${!isCardShowing ? 180 : 0}deg)`,
     height: load ? "90vmin" : "40vmin",
     // config: { mass: 10, tension: 500, friction: 80 },
     config: config.molasses,
   });
   const frontStyle = {
-    opacity: opacity.to((o) => (!isShowing ? 0 : 1 - o)),
+    opacity: opacity.to((o) => (!isCardShowing ? 0 : 1 - o)),
     transform,
   };
   const backStyle = {

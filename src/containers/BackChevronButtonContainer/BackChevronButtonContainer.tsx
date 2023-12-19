@@ -5,15 +5,15 @@ import { useTarotStore } from "../../store";
 
 function BackChevronButtonContainer() {
   const back = useTarotStore((state) => state.back);
-  const isShowing = useTarotStore((state) => state.isShowing);
+  const isCardShowing = useTarotStore((state) => state.isCardShowing);
   const handleClick = () => {
-    if (!isShowing) {
+    if (!isCardShowing) {
       return;
     }
     back();
   };
   const style = {
-    cursor: isShowing ? "pointer" : "auto",
+    cursor: isCardShowing ? "pointer" : "auto",
   };
 
   return (
@@ -22,7 +22,7 @@ function BackChevronButtonContainer() {
       className="back-chevron-button-container"
       style={style}
     >
-      <BackChevron show={isShowing} />
+      <BackChevron show={isCardShowing} />
     </div>
   );
 }

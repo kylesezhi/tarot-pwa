@@ -3,15 +3,10 @@ import "./Affirmation.css";
 
 interface AffirmationProps {
   affirmation: string;
-  show: boolean;
 }
 
-function Affirmation({ affirmation, show = false }: AffirmationProps) {
-  return (
-    <div className="affirmation" style={{ opacity: show ? 0.7 : 0 }}>
-      {affirmation}
-    </div>
-  );
+function Affirmation({ affirmation }: AffirmationProps) {
+  return <div className="affirmation">{affirmation}</div>;
 }
 
 export default Affirmation;

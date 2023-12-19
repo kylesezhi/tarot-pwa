@@ -19,7 +19,9 @@ interface Store {
   getKeywords: () => Array<string>;
   getDescription: () => string;
   getAffirmation: () => string;
-  isShowing: boolean;
+  isCardShowing: boolean;
+  isInterpretationShowing: boolean;
+  showInterpretation: () => void;
 }
 const backCard: Card = {
   number: BACK_OF_CARD_NUMBER,
@@ -28,6 +30,8 @@ const backCard: Card = {
 
 export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
   devtools((set, get) => ({
+    isInterpretationShowing: false,
+    showInterpretation: () => set({ isInterpretationShowing: true }),
     card: backCard,
     deck: Array.from({ length: 78 }, (_, index) => ({
       number: index,
@@ -40,7 +44,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
         }
         return {
           card: deck[Math.floor(Math.random() * deck.length)],
-          isShowing: true,
+          isCardShowing: true,
         };
       }),
     shuffleDeck: () =>
@@ -52,7 +56,12 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
           }),
         };
       }),
-    back: () => set({ card: backCard, isShowing: false }),
+    back: () =>
+      set({
+        card: backCard,
+        isCardShowing: false,
+        isInterpretationShowing: false,
+      }),
     getTitle: () => {
       const interpretation = tarot_interpretations[get().card.number];
       return interpretation ? interpretation.name : "";
@@ -66,7 +75,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
       }
       return interpretation.keywords[orientation];
     },
-    isShowing: false,
+    isCardShowing: false,
     getDescription: () => {
       const card = get().card;
       const orientation = card.reversed ? "reversed" : "upright";

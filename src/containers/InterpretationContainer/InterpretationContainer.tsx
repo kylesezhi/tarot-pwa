@@ -12,11 +12,12 @@ function InterpretationContainer() {
   const title = useTarotStore((state) => state.getTitle)();
   const keywords = useTarotStore((state) => state.getKeywords)();
   const description = useTarotStore((state) => state.getDescription)();
-  const isShowing = useTarotStore((state) => state.isShowing);
+  const isInterpretationShowing = useTarotStore(
+    (state) => state.isInterpretationShowing,
+  );
   const { opacity, paddingTop } = useSpring({
-    opacity: isShowing ? 1 : 0,
-    paddingTop: isShowing ? "0" : "50px",
-    delay: 1000,
+    opacity: isInterpretationShowing ? 1 : 0,
+    paddingTop: isInterpretationShowing ? "0" : "50px",
     config: config.molasses,
   });
 
@@ -27,7 +28,7 @@ function InterpretationContainer() {
 
   return (
     <animated.div style={style}>
-      <Affirmation affirmation={affirmation} show={isShowing} />
+      <Affirmation affirmation={affirmation} />
       <Title title={title} />
       <Keywords>{keywords}</Keywords>
       <Description>{description}</Description>

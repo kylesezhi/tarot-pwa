@@ -6,14 +6,26 @@ import TarotCard from "../../components/TarotCard/TarotCard";
 function TarotCardContainer() {
   const drawCard = useTarotStore((state) => state.drawCard);
   const card = useTarotStore((state) => state.card);
-  const isShowing = useTarotStore((state) => state.isShowing);
+  const isCardShowing = useTarotStore((state) => state.isCardShowing);
+  const isInterpretationShowing = useTarotStore(
+    (state) => state.isInterpretationShowing,
+  );
+  const showInterpretation = useTarotStore((state) => state.showInterpretation);
+
+  const onClick = () => {
+    if (!isCardShowing) {
+      drawCard();
+    } else if (!isInterpretationShowing) {
+      showInterpretation();
+    }
+  };
 
   return (
-    <div onClick={drawCard} className="tarot-card-container">
+    <div onClick={onClick} className="tarot-card-container">
       <TarotCard
         number={card.number}
         reversed={card.reversed}
-        isShowing={isShowing}
+        isCardShowing={isCardShowing}
       />
     </div>
   );
