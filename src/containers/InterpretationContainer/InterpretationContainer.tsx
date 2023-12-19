@@ -12,6 +12,7 @@ function InterpretationContainer() {
   const title = useTarotStore((state) => state.getTitle)();
   const keywords = useTarotStore((state) => state.getKeywords)();
   const description = useTarotStore((state) => state.getDescription)();
+  const isReversed = useTarotStore((state) => state.card).reversed;
   const isInterpretationShowing = useTarotStore(
     (state) => state.isInterpretationShowing,
   );
@@ -29,7 +30,7 @@ function InterpretationContainer() {
   return (
     <animated.div style={style}>
       <Affirmation affirmation={affirmation} />
-      <Title title={title} />
+      <Title title={title} isReversed={isReversed} />
       <Keywords>{keywords}</Keywords>
       <Description>{description}</Description>
     </animated.div>
