@@ -1,8 +1,8 @@
-.back-chevron {
+.back-chevron-image {
   height: 10vmin;
 }
 
-.back-chevron-container {
+.back-chevron {
   width: 100%;
   display: flex;
   flex-direction: row;

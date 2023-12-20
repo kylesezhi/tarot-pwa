@@ -13,9 +13,3 @@ body {
   justify-content: center;
   color: white;
 }
-
-.top-nav {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}

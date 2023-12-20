@@ -7,10 +7,10 @@ function BackChevron({ show = true }) {
     opacity: show ? "0.4" : "0",
   };
   return (
-    <div className="back-chevron-container">
+    <div className="back-chevron">
       <img
         src={chevron}
-        className="back-chevron"
+        className="back-chevron-image"
         alt="back-chevron"
         style={style}
       />

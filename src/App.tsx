@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import TarotCardContainer from "./containers/TarotCardContainer/TarotCardContainer";
 import BackChevronButtonContainer from "./containers/BackChevronButtonContainer/BackChevronButtonContainer";
 import ShareButtonContainer from "./containers/ShareButtonContainer/ShareButtonContainer";
+import TopNavigation from "./components/TopNavigation/TopNavigation";
 import "./App.css";
 import { useTarotStore } from "./store";
 import "./assets/fonts.css";
@@ -16,10 +17,10 @@ function App() {
   return (
     <div className="App">
       <div className="App-card">
-        <div className="top-nav">
+        <TopNavigation>
           <BackChevronButtonContainer />
           <ShareButtonContainer />
-        </div>
+        </TopNavigation>
         <TarotCardContainer />
       </div>
       <InterpretationContainer />
