@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
+import { getRandom } from "../utils/helpers";
 const shuffle = require("knuth-shuffle").knuthShuffle;
 const tarot_interpretations = require("./interpretations.json");
 
@@ -43,7 +44,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
           return {};
         }
         return {
-          card: deck[Math.floor(Math.random() * deck.length)],
+          card: getRandom(deck),
           isCardShowing: true,
         };
       }),
