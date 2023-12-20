@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import TarotCardContainer from "../../containers/TarotCardContainer/TarotCardContainer";
 import BackChevronButtonContainer from "../../containers/BackChevronButtonContainer/BackChevronButtonContainer";
 import ShareButtonContainer from "../../containers/ShareButtonContainer/ShareButtonContainer";
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-card">
+        <Link to="all">ALL</Link>
         <TopNavigation>
           <BackChevronButtonContainer />
           <ShareButtonContainer />
