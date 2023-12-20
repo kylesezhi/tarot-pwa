@@ -2,6 +2,7 @@
 
 1. View all cards menu
 1. Get back button to work in mobile - react router
+1. Add click to display description after interpretation
 1. Start with infinity symbol, fade out to card fading in
 1. Size of card - make bigger on mobile, smaller in web
 1. Add image to share content
