@@ -4,7 +4,7 @@ import chevron from "./assets/chevron-left-svgrepo-com.svg";
 
 function BackChevron({ show = true }) {
   const style = {
-    opacity: show ? "0.4" : "0",
+    opacity: show ? "0.3" : "0",
   };
   return (
     <div className="back-chevron">

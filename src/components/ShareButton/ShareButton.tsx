@@ -7,7 +7,7 @@ interface ShareButtonProps {
 }
 
 function ShareButton({ show }: ShareButtonProps) {
-  const styles = { opacity: show ? 0.5 : 0 };
+  const styles = { opacity: show ? 0.3 : 0 };
   return (
     <img src={icon} alt="share-icon" className="share-image" style={styles} />
   );
