@@ -1,0 +1,6 @@
+.static-tarot-card-container {
+  cursor: pointer;
+  height: 30vmin;
+  padding: 2vmin;
+  justify-content: center;
+}
