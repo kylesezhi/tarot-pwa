@@ -26,8 +26,12 @@ function ShareButtonContainer() {
     }
   };
 
+  const style = {
+    cursor: canShare ? "pointer" : "auto",
+  };
+
   return (
-    <div onClick={onClick} className="share-button-container">
+    <div onClick={onClick} className="share-button-container" style={style}>
       <ShareButton show={canShare} />
     </div>
   );
