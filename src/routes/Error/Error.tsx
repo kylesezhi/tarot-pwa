@@ -1,6 +1,7 @@
 import "./Error.css";
-import Affirmation from "./components/Affirmation/Affirmation";
-import { getRandom } from "./utils/helpers";
+import Affirmation from "../../components/Affirmation/Affirmation";
+import Description from "../../components/Description/Description";
+import { getRandom } from "../../utils/helpers";
 
 function Error() {
   const errorMessages = [
@@ -17,7 +18,8 @@ function Error() {
   const errorMessage = getRandom(errorMessages);
   return (
     <div className="error">
-      <Affirmation affirmation={errorMessage} />
+      <Affirmation affirmation="404: Page Not Found" />
+      <Description>{errorMessage}</Description>
     </div>
   );
 }
