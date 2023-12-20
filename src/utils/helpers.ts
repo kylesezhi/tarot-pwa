@@ -1,4 +1,16 @@
-const getRandom: any = (array: Array<any>) =>
+const getRandom = (array: Array<any>): any =>
   array[Math.floor(Math.random() * array.length)];
 
-export { getRandom };
+const parseNum = (str: string | undefined, alt: number): number => {
+  if (str === undefined) {
+    return alt;
+  }
+  try {
+    const result = parseInt(str);
+    return isNaN(result) ? alt : result;
+  } catch (_) {
+    return alt;
+  }
+};
+
+export { getRandom, parseNum };

@@ -1,0 +1,10 @@
+body {
+  background-color: #282c34;
+}
+
+.show-card {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}

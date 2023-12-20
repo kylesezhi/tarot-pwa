@@ -3,7 +3,7 @@ import "./TarotCardImage.css";
 
 interface TarotImageProps {
   number: number;
-  reversed: boolean;
+  reversed?: boolean;
 }
 
 function TarotCardImage({ number = 78, reversed = false }: TarotImageProps) {

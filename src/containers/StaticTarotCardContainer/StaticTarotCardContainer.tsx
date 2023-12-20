@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./StaticTarotCardContainer.css";
 import TarotCardImage from "../../components/TarotCardImage/TarotCardImage";
 import CardName from "../../components/CardName/CardName";
@@ -13,17 +14,15 @@ function StaticTarotCardContainer({
   card,
   number,
 }: StaticTarotCardContainerProps) {
-  const onClick = () => {
-    console.log("TODO");
-  };
-
   return (
-    <div onClick={onClick} className="static-tarot-card-container">
-      <div className="static-tarot-image-container">
-        <TarotCardImage number={number} reversed={false} />
+    <Link to={`/card/${number}`} style={{ textDecoration: "none" }}>
+      <div className="static-tarot-card-container">
+        <div className="static-tarot-image-container">
+          <TarotCardImage number={number} reversed={false} />
+        </div>
+        <CardName title={card.name} />
       </div>
-      <CardName title={card.name} />
-    </div>
+    </Link>
   );
 }
 
