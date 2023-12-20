@@ -11,7 +11,7 @@ function ShareButtonContainer() {
   const affirmation = useTarotStore((state) => state.getAffirmation)();
   const title = useTarotStore((state) => state.getTitle)();
 
-  const data = { text: `${title} | "${affirmation}" | ${description}`, title };
+  const data = { text: `${title} | "${affirmation}" | ${description}` };
   const canShare =
     isInterpretationShowing && navigator.canShare && navigator.canShare(data);
 

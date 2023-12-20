@@ -1,7 +1,8 @@
 # TODO
 
-1. View all cards menu
-1. Get back button to work in mobile - react router
+1. Style individual card page
+1. Add back button to all cards page
+1. Get back button to work on fortune page (App)
 1. Add click to display description after interpretation
 1. Start with infinity symbol, fade out to card fading in
 1. Size of card - make bigger on mobile, smaller in web
