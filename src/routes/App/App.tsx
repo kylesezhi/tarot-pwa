@@ -8,6 +8,7 @@ import "./App.css";
 import { useTarotStore } from "../../store";
 import "../../assets/fonts.css";
 import InterpretationContainer from "../../containers/InterpretationContainer/InterpretationContainer";
+import ShowAllButton from "../../components/ShowAllButton/ShowAllButton";
 
 function App() {
   const shuffleDeck = useTarotStore((state) => state.shuffleDeck);
@@ -18,9 +19,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-card">
-        <Link to="all">ALL</Link>
         <TopNavigation>
           <BackChevronButtonContainer />
+          <Link to="all">
+            <ShowAllButton />
+          </Link>
           <ShareButtonContainer />
         </TopNavigation>
         <TarotCardContainer />

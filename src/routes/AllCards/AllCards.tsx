@@ -7,7 +7,11 @@ function AllCards() {
   return (
     <div className="all-cards">
       {interpretations.map((card, number) => (
-        <StaticTarotCardContainer card={card} number={number} />
+        <StaticTarotCardContainer
+          key={`${number}${card.name}`}
+          card={card}
+          number={number}
+        />
       ))}
     </div>
   );
