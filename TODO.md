@@ -12,3 +12,5 @@
 1. Add URL to current card to share button
 1. Use state machine
 1. Ensure offline works
+1. Write tests
+1. Storybook? lol
