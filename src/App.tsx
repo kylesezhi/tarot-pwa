@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import TarotCardContainer from "./containers/TarotCardContainer/TarotCardContainer";
 import BackChevronButtonContainer from "./containers/BackChevronButtonContainer/BackChevronButtonContainer";
+import ShareButtonContainer from "./containers/ShareButtonContainer/ShareButtonContainer";
 import "./App.css";
 import { useTarotStore } from "./store";
 import "./assets/fonts.css";
@@ -15,7 +16,10 @@ function App() {
   return (
     <div className="App">
       <div className="App-card">
-        <BackChevronButtonContainer />
+        <div className="top-nav">
+          <BackChevronButtonContainer />
+          <ShareButtonContainer />
+        </div>
         <TarotCardContainer />
       </div>
       <InterpretationContainer />
