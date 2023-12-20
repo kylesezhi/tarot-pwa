@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 import { getRandom } from "../utils/helpers";
 const shuffle = require("knuth-shuffle").knuthShuffle;
-const tarot_interpretations = require("./interpretations.json");
+const tarot_interpretations: Array<Interpretation> = require("./interpretations.json");
 
 const REVERSED_CHANCE = 0.4;
 export const BACK_OF_CARD_NUMBER = 78;
@@ -10,7 +10,23 @@ type Card = {
   number: number;
   reversed: boolean;
 };
+export type Interpretation = {
+  name: string;
+  keywords: {
+    upright: Array<string>;
+    reversed: Array<string>;
+  };
+  description: {
+    upright: string;
+    reversed: string;
+  };
+  affirmations: {
+    upright: Array<string>;
+    reversed: Array<string>;
+  };
+};
 interface Store {
+  interpretations: Array<Interpretation>;
   card: Card;
   deck: Array<Card>;
   drawCard: () => void;
@@ -31,6 +47,7 @@ const backCard: Card = {
 
 export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
   devtools((set, get) => ({
+    interpretations: tarot_interpretations,
     isInterpretationShowing: false,
     showInterpretation: () => set({ isInterpretationShowing: true }),
     card: backCard,
@@ -82,7 +99,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
       const orientation = card.reversed ? "reversed" : "upright";
       const interpretation = tarot_interpretations[card.number];
       if (!interpretation) {
-        return [];
+        return "";
       }
       return interpretation.description[orientation];
     },
@@ -91,7 +108,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
       const orientation = card.reversed ? "reversed" : "upright";
       const interpretation = tarot_interpretations[card.number];
       if (!interpretation) {
-        return [];
+        return "";
       }
       const affirmations = interpretation.affirmations[orientation];
       return affirmations[Math.floor(Math.random() * affirmations.length)];

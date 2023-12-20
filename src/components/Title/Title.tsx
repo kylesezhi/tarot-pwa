@@ -3,7 +3,7 @@ import "./Title.css";
 
 interface TitleProps {
   title: string;
-  isReversed: boolean;
+  isReversed?: boolean;
 }
 
 function Title({ title, isReversed }: TitleProps) {

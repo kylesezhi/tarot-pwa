@@ -3,11 +3,11 @@ import { useTarotStore } from "../../store";
 import StaticTarotCardContainer from "../../containers/StaticTarotCardContainer/StaticTarotCardContainer";
 
 function AllCards() {
-  const deck = useTarotStore((state) => state.deck);
+  const interpretations = useTarotStore((state) => state.interpretations);
   return (
     <div className="all-cards">
-      {deck.map(({ number }) => (
-        <StaticTarotCardContainer number={number} />
+      {interpretations.map((card, number) => (
+        <StaticTarotCardContainer card={card} number={number} />
       ))}
     </div>
   );
