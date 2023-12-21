@@ -2,6 +2,8 @@
 
 1. Add back button to all cards page
 1. Get back button to work on fortune page (App)
+1. Click card to reverse it
+1. Allow to scroll through affirmations
 1. Add click to display description after interpretation
 1. Start with infinity symbol, fade out to card fading in
 1. Size of card - make bigger on mobile, smaller in web

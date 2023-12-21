@@ -10,13 +10,6 @@ body {
   flex-direction: column;
 }
 
-.tarot-sides-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vmin;
-}
-
 .show-tarot-card {
   border-radius: 10px;
   height: 90vmin;
