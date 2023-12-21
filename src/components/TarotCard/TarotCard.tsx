@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import TarotCardImage from "../TarotCardImage/TarotCardImage";
 import "./TarotCard.css";
 import { useSpring, animated, config } from "@react-spring/web";
+import Version from "../Version/Version";
 
 interface TarotProps {
   number: number;
@@ -31,7 +32,6 @@ function TarotCard({
   const backStyle = {
     opacity,
     transform,
-    rotateX: "180deg",
     height,
   };
 
@@ -42,6 +42,7 @@ function TarotCard({
       </animated.div>
       <animated.div id="back" className="tarot-card" style={backStyle}>
         <TarotCardImage number={78} />
+        <Version />
       </animated.div>
     </div>
   );

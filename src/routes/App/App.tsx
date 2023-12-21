@@ -9,6 +9,7 @@ import { useTarotStore } from "../../store";
 import "../../assets/fonts.css";
 import InterpretationContainer from "../../containers/InterpretationContainer/InterpretationContainer";
 import ShowAllButton from "../../components/ShowAllButton/ShowAllButton";
+import Version from "../../components/Version/Version";
 
 function App() {
   const shuffleDeck = useTarotStore((state) => state.shuffleDeck);
@@ -17,8 +18,8 @@ function App() {
   useEffect(shuffleDeck, [shuffleDeck]);
 
   return (
-    <div className="App">
-      <div className="App-card">
+    <div className="app">
+      <div className="app-card">
         <TopNavigation>
           <BackChevronButtonContainer />
           <Link to="all">
