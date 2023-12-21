@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import TarotCardImage from "../TarotCardImage/TarotCardImage";
 import "./TarotCard.css";
 import { useSpring, animated, config } from "@react-spring/web";
-import backImage from "../../assets/Cards/78.webp";
 
 interface TarotProps {
   number: number;

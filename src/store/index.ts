@@ -32,10 +32,10 @@ interface Store {
   drawCard: () => void;
   shuffleDeck: () => void;
   back: () => void;
-  getTitle: () => string;
-  getKeywords: () => Array<string>;
-  getDescription: () => string;
-  getAffirmation: () => string;
+  getTitle: (card: Card) => string;
+  getKeywords: (card: Card) => Array<string>;
+  getDescription: (card: Card) => string;
+  getAffirmation: (card: Card) => string;
   isCardShowing: boolean;
   isInterpretationShowing: boolean;
   showInterpretation: () => void;
@@ -80,12 +80,11 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
         isCardShowing: false,
         isInterpretationShowing: false,
       }),
-    getTitle: () => {
-      const interpretation = tarot_interpretations[get().card.number];
+    getTitle: (card: Card) => {
+      const interpretation = tarot_interpretations[card.number];
       return interpretation ? interpretation.name : "";
     },
-    getKeywords: () => {
-      const card = get().card;
+    getKeywords: (card: Card) => {
       const orientation = card.reversed ? "reversed" : "upright";
       const interpretation = tarot_interpretations[card.number];
       if (!interpretation) {
@@ -94,8 +93,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
       return interpretation.keywords[orientation];
     },
     isCardShowing: false,
-    getDescription: () => {
-      const card = get().card;
+    getDescription: (card: Card) => {
       const orientation = card.reversed ? "reversed" : "upright";
       const interpretation = tarot_interpretations[card.number];
       if (!interpretation) {
@@ -103,8 +101,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
       }
       return interpretation.description[orientation];
     },
-    getAffirmation: () => {
-      const card = get().card;
+    getAffirmation: (card: Card) => {
       const orientation = card.reversed ? "reversed" : "upright";
       const interpretation = tarot_interpretations[card.number];
       if (!interpretation) {
