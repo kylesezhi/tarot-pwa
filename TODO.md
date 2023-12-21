@@ -1,5 +1,7 @@
 # TODO
 
+1. Add version number to UI
+1. Share button should share the data currently on screen
 1. Add back button to all cards page
 1. Get back button to work on fortune page (App)
 1. Click card to reverse it

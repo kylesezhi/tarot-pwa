@@ -37,10 +37,10 @@ function TarotCard({
 
   return (
     <div className="tarot-sides-container">
-      <animated.div className="tarot-card" style={frontStyle}>
+      <animated.div id="front" className="tarot-card" style={frontStyle}>
         <TarotCardImage number={number} reversed={reversed} />
       </animated.div>
-      <animated.div className="tarot-card" style={backStyle}>
+      <animated.div id="back" className="tarot-card" style={backStyle}>
         <TarotCardImage number={78} />
       </animated.div>
     </div>

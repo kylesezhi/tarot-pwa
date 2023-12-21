@@ -6,9 +6,5 @@
 
 .tarot-card {
   position: absolute;
-  border-radius: 10px;
-  height: 90vmin;
-  width: auto;
-  object-fit: contain;
-  will-change: transform, opacity;
+  will-change: transform, opacity, height;
 }
