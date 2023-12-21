@@ -24,14 +24,16 @@ function ShowCard() {
         <TopNavigation>
           <BackChevronButtonContainer />
         </TopNavigation>
-        <div className="tarot-card">
+        <div className="show-tarot-card">
           <TarotCardImage number={number} />
         </div>
       </div>
-      <Affirmation affirmation={affirmation} />
-      <Title title={title} isReversed={false} />
-      <Keywords>{keywords}</Keywords>
-      <Description>{description}</Description>
+      <div>
+        <Affirmation affirmation={affirmation} />
+        <Title title={title} isReversed={false} />
+        <Keywords>{keywords}</Keywords>
+        <Description>{description}</Description>
+      </div>
     </>
   );
 }

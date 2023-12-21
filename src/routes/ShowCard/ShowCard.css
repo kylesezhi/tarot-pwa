@@ -1,11 +1,13 @@
 body {
   background-color: #282c34;
+  text-align: center;
 }
 
 .show-card {
   display: flex;
   text-align: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .tarot-sides-container {
@@ -15,8 +17,7 @@ body {
   height: 90vmin;
 }
 
-.tarot-card {
-  position: absolute;
+.show-tarot-card {
   border-radius: 10px;
   height: 90vmin;
   width: auto;

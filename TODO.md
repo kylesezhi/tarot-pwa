@@ -1,6 +1,5 @@
 # TODO
 
-1. Style individual card page
 1. Add back button to all cards page
 1. Get back button to work on fortune page (App)
 1. Add click to display description after interpretation
