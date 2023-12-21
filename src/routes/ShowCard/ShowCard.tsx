@@ -11,6 +11,7 @@ import Keywords from "../../components/Keywords/Keywords";
 import Description from "../../components/Description/Description";
 
 function ShowCard() {
+  // TODO figure this out using Interpretation - we have to show all the content
   const { cardNumber } = useParams();
   const number = parseNum(cardNumber, 78);
   const upright = { number, reversed: false };
@@ -30,7 +31,7 @@ function ShowCard() {
       </div>
       <div>
         <Affirmation affirmation={affirmation} />
-        <Title title={title} isReversed={false} />
+        <Title title={title} />
         <Keywords>{keywords}</Keywords>
         <Description>{description}</Description>
       </div>

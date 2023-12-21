@@ -1,9 +1,9 @@
 # TODO
 
-1. Share button should share the data currently on screen
+1. Fix ShowCard to show upright only at first
+1. Click card to reverse it in ShowCard
 1. Add back button to all cards page
 1. Get back button to work on fortune page (App)
-1. Click card to reverse it
 1. Allow to scroll through affirmations
 1. Add click to display description after interpretation
 1. Start with infinity symbol, fade out to card fading in

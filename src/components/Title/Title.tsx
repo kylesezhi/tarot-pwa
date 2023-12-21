@@ -3,12 +3,10 @@ import "./Title.css";
 
 interface TitleProps {
   title: string;
-  isReversed?: boolean;
 }
 
-function Title({ title, isReversed }: TitleProps) {
-  const finalTitle = `${isReversed ? "Reversed " : ""}${title}`;
-  return <div className="title">{finalTitle}</div>;
+function Title({ title }: TitleProps) {
+  return <div className="title">{title}</div>;
 }
 
 export default Title;

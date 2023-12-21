@@ -7,12 +7,11 @@ function ShareButtonContainer() {
   const isInterpretationShowing = useTarotStore(
     (state) => state.isInterpretationShowing,
   );
-  const card = useTarotStore((state) => state.card);
-  const description = useTarotStore((state) => state.getDescription)(card);
-  const affirmation = useTarotStore((state) => state.getAffirmation)(card);
-  const title = useTarotStore((state) => state.getTitle)(card);
+  const interpretation = useTarotStore((state) => state.interpretation);
 
-  const data = { text: `${title} | "${affirmation}" | ${description}` };
+  const data = {
+    text: `${interpretation.name} | "${interpretation.affirmation}" | ${interpretation.description}`,
+  };
   const canShare =
     isInterpretationShowing && navigator.canShare && navigator.canShare(data);
 
