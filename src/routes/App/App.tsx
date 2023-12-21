@@ -9,7 +9,6 @@ import { useTarotStore } from "../../store";
 import "../../assets/fonts.css";
 import InterpretationContainer from "../../containers/InterpretationContainer/InterpretationContainer";
 import ShowAllButton from "../../components/ShowAllButton/ShowAllButton";
-import Version from "../../components/Version/Version";
 
 function App() {
   const shuffleDeck = useTarotStore((state) => state.shuffleDeck);
