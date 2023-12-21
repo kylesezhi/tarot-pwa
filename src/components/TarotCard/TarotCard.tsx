@@ -41,7 +41,9 @@ function TarotCard({
       <animated.div className="tarot-card" style={frontStyle}>
         <TarotCardImage number={number} reversed={reversed} />
       </animated.div>
-      <animated.img src={backImage} className="tarot-card" style={backStyle} />
+      <animated.div className="tarot-card" style={backStyle}>
+        <TarotCardImage number={78} />
+      </animated.div>
     </div>
   );
 }
