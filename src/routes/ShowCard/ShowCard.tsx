@@ -43,7 +43,7 @@ function ShowCard() {
         />
 
         {/* Facebook Meta Tags */}
-        <meta property="og:url" content={getCardUrl(number)} />
+        <meta property="og:url" content={getCardUrl(number, orientation)} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={`Daily Tarot | ${title}`} />
         <meta
@@ -56,7 +56,10 @@ function ShowCard() {
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="tarot-tarot.netlify.app" />
-        <meta property="twitter:url" content={getCardUrl(number)} />
+        <meta
+          property="twitter:url"
+          content={getCardUrl(number, orientation)}
+        />
         <meta name="twitter:title" content={`Daily Tarot | ${title}`} />
         <meta
           name="twitter:description"
