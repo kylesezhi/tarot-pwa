@@ -1,29 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import TarotCardImage from "../../components/TarotCardImage/TarotCardImage";
 import TopNavigation from "../../components/TopNavigation/TopNavigation";
-import { Orientation, parseNum } from "../../utils/helpers";
 import "./ShowCard.css";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useTarotStore } from "../../store";
 import Affirmation from "../../components/Affirmation/Affirmation";
 import Title from "../../components/Title/Title";
 import Keywords from "../../components/Keywords/Keywords";
 import Description from "../../components/Description/Description";
 import BackChevronLinkContainer from "../../containers/BackChevronLinkContainer/BackChevronLinkContainer";
-import { getCardUrl } from "../../utils/helpers";
+import { getCardUrl, parseOrientation, parseNum } from "../../utils/helpers";
 
 function ShowCard() {
-  const [orientation, setOrientation] = useState<Orientation>("upright");
-  const number = parseNum(useParams().cardNumber, 78);
+  const navigate = useNavigate();
+  const { cardNumber, cardOrientation } = useParams();
+  const orientation = parseOrientation(cardOrientation);
+  const number = parseNum(cardNumber, 78);
   const interpretation = useTarotStore((state) => state.getInterpretation)(
     number,
   );
   const onClick = () => {
     if (orientation === "upright") {
-      setOrientation("reversed");
+      navigate(`/cards/${number}/reversed`);
     } else {
-      setOrientation("upright");
+      navigate(`/cards/${number}/upright`);
     }
   };
   const title = `${orientation === "reversed" ? "Reversed " : ""}${
@@ -67,10 +68,7 @@ function ShowCard() {
           <BackChevronLinkContainer />
         </TopNavigation>
         <div className="show-tarot-card">
-          <TarotCardImage
-            number={number}
-            reversed={orientation === "reversed"}
-          />
+          <TarotCardImage number={number} orientation={orientation} />
         </div>
       </div>
       <div>

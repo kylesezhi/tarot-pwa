@@ -1,14 +1,15 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
-import { getOrientation, getRandom } from "../utils/helpers";
+import { getRandom } from "../utils/helpers";
 const shuffle = require("knuth-shuffle").knuthShuffle;
 const tarot_interpretations: Array<Interpretation> = require("./interpretations.json");
 
 const REVERSED_CHANCE = 0.4;
 export const BACK_OF_CARD_NUMBER = 78;
+export type Orientation = "upright" | "reversed";
 type Card = {
   number: number;
-  reversed: boolean;
+  orientation: Orientation;
 };
 export type Interpretation = {
   name: string;
@@ -46,7 +47,7 @@ interface Store {
 }
 const backCard: Card = {
   number: BACK_OF_CARD_NUMBER,
-  reversed: false,
+  orientation: "upright",
 };
 const emptyInterpretation = {
   name: "",
@@ -83,7 +84,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
     card: backCard,
     deck: Array.from({ length: 78 }, (_, index) => ({
       number: index,
-      reversed: false,
+      orientation: "upright",
     })),
     drawCard: () =>
       set(({ deck, card }) => {
@@ -92,18 +93,19 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
         }
         const drawnCard = getRandom(deck);
         const interpretation = tarot_interpretations[drawnCard.number];
-        const orientation = getOrientation(card.reversed);
-        const name = `${drawnCard.reversed ? "Reversed " : ""}${
-          interpretation.name
-        }`;
-        const affirmation = getRandom(interpretation.affirmations[orientation]);
+        const name = `${
+          drawnCard.orientation === "reversed" ? "Reversed " : ""
+        }${interpretation.name}`;
+        const affirmation = getRandom(
+          interpretation.affirmations[card.orientation],
+        );
         return {
           card: drawnCard,
           isCardShowing: true,
           interpretation: {
             name,
-            keywords: interpretation.keywords[orientation],
-            description: interpretation.description[orientation],
+            keywords: interpretation.keywords[card.orientation],
+            description: interpretation.description[card.orientation],
             affirmation,
           },
         };
@@ -112,7 +114,8 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
       set((state) => {
         return {
           deck: shuffle(state.deck.slice(0)).map((card: Card) => {
-            card.reversed = Math.random() < REVERSED_CHANCE;
+            const reversed = Math.random() < REVERSED_CHANCE;
+            card.orientation = reversed ? "reversed" : "upright";
             return card;
           }),
         };

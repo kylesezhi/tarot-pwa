@@ -3,16 +3,17 @@ import TarotCardImage from "../TarotCardImage/TarotCardImage";
 import "./TarotCard.css";
 import { useSpring, animated, config } from "@react-spring/web";
 import Version from "../Version/Version";
+import { Orientation } from "../../store";
 
 interface TarotProps {
   number: number;
-  reversed: boolean;
+  orientation: Orientation;
   isCardShowing: boolean;
 }
 
 function TarotCard({
   number = 78,
-  reversed = false,
+  orientation = "upright",
   isCardShowing,
 }: TarotProps) {
   // Fade in card on load
@@ -38,7 +39,7 @@ function TarotCard({
   return (
     <div className="tarot-sides-container">
       <animated.div id="front" className="tarot-card" style={frontStyle}>
-        <TarotCardImage number={number} reversed={reversed} />
+        <TarotCardImage number={number} orientation={orientation} />
       </animated.div>
       <animated.div id="back" className="tarot-card" style={backStyle}>
         <TarotCardImage number={78} />

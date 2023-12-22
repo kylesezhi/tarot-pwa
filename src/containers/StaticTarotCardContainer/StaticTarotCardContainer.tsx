@@ -15,10 +15,10 @@ function StaticTarotCardContainer({
   number,
 }: StaticTarotCardContainerProps) {
   return (
-    <Link to={`/card/${number}`} style={{ textDecoration: "none" }}>
+    <Link to={`/cards/${number}/upright`} style={{ textDecoration: "none" }}>
       <div className="static-tarot-card-container">
         <div className="static-tarot-image-container">
-          <TarotCardImage number={number} reversed={false} />
+          <TarotCardImage number={number} orientation="upright" />
         </div>
         <CardName title={card.name} />
       </div>

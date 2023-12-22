@@ -11,12 +11,12 @@ const router = createBrowserRouter([
     errorElement: <Error />,
   },
   {
-    path: "/all",
+    path: "/cards",
     element: <AllCards />,
     errorElement: <Error />,
   },
   {
-    path: "/card/:cardNumber",
+    path: "/cards/:cardNumber/:cardOrientation",
     element: <ShowCard />,
     errorElement: <Error />,
   },

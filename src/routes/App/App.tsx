@@ -21,7 +21,7 @@ function App() {
       <div className="app-card">
         <TopNavigation>
           <BackChevronButtonContainer />
-          <Link to="all">
+          <Link to="cards">
             <ShowAllButton />
           </Link>
           <ShareButtonContainer />

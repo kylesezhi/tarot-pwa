@@ -1,7 +1,5 @@
 # TODO
 
-1. Make ShowCard move orientation to the URL
-1. Share doesn't work in Firefox Android
 1. Reverse card is animated in ShowCard
 1. Get back button to work on fortune page (App)
 1. Allow to scroll through affirmations

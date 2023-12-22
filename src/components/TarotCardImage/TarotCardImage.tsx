@@ -1,16 +1,20 @@
 import React from "react";
 import "./TarotCardImage.css";
+import { Orientation } from "../../store";
 
 interface TarotImageProps {
   number: number;
-  reversed?: boolean;
+  orientation?: Orientation;
 }
 
-function TarotCardImage({ number = 78, reversed = false }: TarotImageProps) {
+function TarotCardImage({
+  number = 78,
+  orientation = "upright",
+}: TarotImageProps) {
   const tarotImage = require(`../../assets/Cards/${number}.webp`);
 
   const reversedStyle = {
-    transform: `rotate(${reversed ? "180" : "0"}deg)`,
+    transform: `rotate(${orientation === "reversed" ? "180" : "0"}deg)`,
   };
 
   return (

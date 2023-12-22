@@ -24,7 +24,7 @@ function TarotCardContainer() {
     <div onClick={onClick} className="tarot-card-container">
       <TarotCard
         number={card.number}
-        reversed={card.reversed}
+        orientation={card.orientation}
         isCardShowing={isCardShowing}
       />
     </div>

@@ -1,5 +1,14 @@
+import { Orientation } from "../store";
+
 const getRandom = (array: Array<any>): any =>
   array[Math.floor(Math.random() * array.length)];
+
+const parseOrientation = (param: string | undefined): Orientation => {
+  if (param !== "reversed") {
+    return "upright";
+  }
+  return "reversed";
+};
 
 const parseNum = (str: string | undefined, alt: number): number => {
   if (str === undefined) {
@@ -13,14 +22,8 @@ const parseNum = (str: string | undefined, alt: number): number => {
   }
 };
 
-export type Orientation = "upright" | "reversed";
-
-const getOrientation = (reversed: boolean): Orientation => {
-  return reversed ? "reversed" : "upright";
-};
-
 const getCardUrl = (number: number): string => {
-  return `${window.location.origin}/card/${number}`;
+  return `${window.location.origin}/cards/${number}`;
 };
 
-export { getRandom, parseNum, getOrientation, getCardUrl };
+export { getRandom, parseNum, getCardUrl, parseOrientation };
