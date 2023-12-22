@@ -13,4 +13,10 @@ const parseNum = (str: string | undefined, alt: number): number => {
   }
 };
 
-export { getRandom, parseNum };
+export type Orientation = "upright" | "reversed";
+
+const getOrientation = (reversed: boolean): Orientation => {
+  return reversed ? "reversed" : "upright";
+};
+
+export { getRandom, parseNum, getOrientation };

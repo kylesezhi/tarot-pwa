@@ -1,6 +1,5 @@
 # TODO
 
-1. Fix ShowCard to show upright only at first
 1. Click card to reverse it in ShowCard
 1. Add back button to all cards page
 1. Get back button to work on fortune page (App)
@@ -10,8 +9,7 @@
 1. Size of card - make bigger on mobile, smaller in web
 1. Load images in All before showing UI
 1. Add image to share content
-1. 3D for card flipping
-  - https://codesandbox.io/p/sandbox/enter-portals-9m4tpc?file=%2Fsrc%2Findex.js
+1. 3D for card flipping - https://codesandbox.io/p/sandbox/enter-portals-9m4tpc?file=%2Fsrc%2Findex.js
 1. Animate click/tap card
 1. Fix fast change to back on flip back
 1. Add URL to current card to share button
