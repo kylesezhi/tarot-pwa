@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import TarotCardImage from "../../components/TarotCardImage/TarotCardImage";
 import TopNavigation from "../../components/TopNavigation/TopNavigation";
-import BackChevronButtonContainer from "../../containers/BackChevronButtonContainer/BackChevronButtonContainer";
 import { Orientation, parseNum } from "../../utils/helpers";
 import "./ShowCard.css";
 import { useParams } from "react-router-dom";
@@ -10,6 +9,7 @@ import Affirmation from "../../components/Affirmation/Affirmation";
 import Title from "../../components/Title/Title";
 import Keywords from "../../components/Keywords/Keywords";
 import Description from "../../components/Description/Description";
+import BackChevronLinkContainer from "../../containers/BackChevronLinkContainer/BackChevronLinkContainer";
 
 function ShowCard() {
   const [orientation, setOrientation] = useState<Orientation>("upright");
@@ -29,7 +29,7 @@ function ShowCard() {
     <>
       <div onClick={onClick} className="show-card">
         <TopNavigation>
-          <BackChevronButtonContainer />
+          <BackChevronLinkContainer />
         </TopNavigation>
         <div className="show-tarot-card">
           <TarotCardImage
@@ -39,7 +39,6 @@ function ShowCard() {
         </div>
       </div>
       <div>
-        {/* TODO show all affirmations */}
         <Affirmation
           affirmation={interpretation.affirmations[orientation][0]}
         />
