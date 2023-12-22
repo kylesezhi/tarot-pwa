@@ -24,6 +24,9 @@ function ShowCard() {
       setOrientation("upright");
     }
   };
+  const title = `${orientation === "reversed" ? "Reversed " : ""}${
+    interpretation.name
+  }`;
 
   return (
     <>
@@ -42,7 +45,7 @@ function ShowCard() {
         <Affirmation
           affirmation={interpretation.affirmations[orientation][0]}
         />
-        <Title title={interpretation.name} />
+        <Title title={title} />
         <Keywords>{interpretation.keywords[orientation]}</Keywords>
         <Description>{interpretation.description[orientation]}</Description>
       </div>
