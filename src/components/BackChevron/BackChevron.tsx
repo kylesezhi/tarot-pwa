@@ -1,6 +1,6 @@
 import React from "react";
 import "./BackChevron.css";
-import chevron from "./assets/chevron-left-svgrepo-com.svg";
+import chevron from "./assets/chevron-left.svg";
 
 function BackChevron({ show = true }) {
   const style = {

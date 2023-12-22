@@ -17,14 +17,25 @@ function ShowCard() {
   const interpretation = useTarotStore((state) => state.getInterpretation)(
     number,
   );
+  const onClick = () => {
+    if (orientation === "upright") {
+      setOrientation("reversed");
+    } else {
+      setOrientation("upright");
+    }
+  };
+
   return (
     <>
-      <div className="show-card">
+      <div onClick={onClick} className="show-card">
         <TopNavigation>
           <BackChevronButtonContainer />
         </TopNavigation>
         <div className="show-tarot-card">
-          <TarotCardImage number={number} />
+          <TarotCardImage
+            number={number}
+            reversed={orientation === "reversed"}
+          />
         </div>
       </div>
       <div>

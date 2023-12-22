@@ -1,6 +1,6 @@
 # TODO
 
-1. Click card to reverse it in ShowCard
+1. Reverse card is animated in ShowCard
 1. Add back button to all cards page
 1. Get back button to work on fortune page (App)
 1. Allow to scroll through affirmations
