@@ -8,9 +8,12 @@ function ShareButtonContainer() {
     (state) => state.isInterpretationShowing,
   );
   const interpretation = useTarotStore((state) => state.interpretation);
+  const card = useTarotStore((state) => state.card);
 
   const data = {
-    text: `${interpretation.name} | "${interpretation.affirmation}" | ${interpretation.description}`,
+    title: interpretation.name,
+    text: interpretation.affirmation,
+    url: `${window.location.origin}/card/${card.number}`,
   };
   const canShare =
     isInterpretationShowing && navigator.canShare && navigator.canShare(data);
