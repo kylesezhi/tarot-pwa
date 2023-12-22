@@ -2,6 +2,7 @@ import React from "react";
 import "./ShareButtonContainer.css";
 import { useTarotStore } from "../../store";
 import ShareButton from "../../components/ShareButton/ShareButton";
+import { getCardUrl } from "../../utils/helpers";
 
 function ShareButtonContainer() {
   const isInterpretationShowing = useTarotStore(
@@ -13,7 +14,7 @@ function ShareButtonContainer() {
   const data = {
     title: interpretation.name,
     text: interpretation.affirmation,
-    url: `${window.location.origin}/card/${card.number}`,
+    url: getCardUrl(card.number),
   };
   const canShare =
     isInterpretationShowing && navigator.canShare && navigator.canShare(data);

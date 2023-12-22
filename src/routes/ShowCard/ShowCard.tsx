@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import TarotCardImage from "../../components/TarotCardImage/TarotCardImage";
 import TopNavigation from "../../components/TopNavigation/TopNavigation";
 import { Orientation, parseNum } from "../../utils/helpers";
@@ -10,6 +11,7 @@ import Title from "../../components/Title/Title";
 import Keywords from "../../components/Keywords/Keywords";
 import Description from "../../components/Description/Description";
 import BackChevronLinkContainer from "../../containers/BackChevronLinkContainer/BackChevronLinkContainer";
+import { getCardUrl } from "../../utils/helpers";
 
 function ShowCard() {
   const [orientation, setOrientation] = useState<Orientation>("upright");
@@ -30,6 +32,20 @@ function ShowCard() {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content={interpretation.description[orientation]}
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={title} />
+        <meta
+          property="og:description"
+          content={interpretation.description[orientation]}
+        />
+        <meta property="og:url" content={getCardUrl(number)} />
+        <meta property="og:site_name" content="Daily Tarot" />
+      </Helmet>
       <div onClick={onClick} className="show-card">
         <TopNavigation>
           <BackChevronLinkContainer />
