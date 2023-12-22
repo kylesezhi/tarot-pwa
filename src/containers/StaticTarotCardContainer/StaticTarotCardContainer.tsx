@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./StaticTarotCardContainer.css";
 import TarotCardImage from "../../components/TarotCardImage/TarotCardImage";
 import CardName from "../../components/CardName/CardName";
-import { Interpretation } from "../../store";
+import { Interpretation } from "../../store/types";
 
 interface StaticTarotCardContainerProps {
   card: Interpretation;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./TarotCardImage.css";
-import { Orientation } from "../../store";
+import { Orientation } from "../../store/types";
 
 interface TarotImageProps {
   number: number;

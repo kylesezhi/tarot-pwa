@@ -11,15 +11,16 @@ import Keywords from "../../components/Keywords/Keywords";
 import Description from "../../components/Description/Description";
 import BackChevronLinkContainer from "../../containers/BackChevronLinkContainer/BackChevronLinkContainer";
 import { getCardUrl, parseOrientation, parseNum } from "../../utils/helpers";
+import { Interpretation } from "../../store/types";
 
 function ShowCard() {
   const navigate = useNavigate();
   const { cardNumber, cardOrientation } = useParams();
   const orientation = parseOrientation(cardOrientation);
   const number = parseNum(cardNumber, 78);
-  const interpretation = useTarotStore((state) => state.getInterpretation)(
-    number,
-  );
+  const interpretation: Interpretation = useTarotStore(
+    (state) => state.getInterpretation,
+  )(number);
   const onClick = () => {
     if (orientation === "upright") {
       navigate(`/cards/${number}/reversed`);

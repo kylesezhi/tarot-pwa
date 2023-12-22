@@ -3,7 +3,7 @@ import TarotCardImage from "../TarotCardImage/TarotCardImage";
 import "./TarotCard.css";
 import { useSpring, animated, config } from "@react-spring/web";
 import Version from "../Version/Version";
-import { Orientation } from "../../store";
+import { Orientation } from "../../store/types";
 
 interface TarotProps {
   number: number;

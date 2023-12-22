@@ -1,4 +1,4 @@
-import { Orientation } from "../store";
+import { Orientation } from "../store/types";
 
 const getRandom = (array: Array<any>): any =>
   array[Math.floor(Math.random() * array.length)];
