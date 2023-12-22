@@ -22,8 +22,8 @@ const parseNum = (str: string | undefined, alt: number): number => {
   }
 };
 
-const getCardUrl = (number: number): string => {
-  return `${window.location.origin}/cards/${number}`;
+const getCardUrl = (number: number, orientation: Orientation): string => {
+  return `${window.location.origin}/cards/${number}/${orientation}`;
 };
 
 export { getRandom, parseNum, getCardUrl, parseOrientation };

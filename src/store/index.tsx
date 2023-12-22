@@ -50,6 +50,7 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
             keywords: interpretation.keywords[card.orientation],
             description: interpretation.description[card.orientation],
             affirmation,
+            orientation: card.orientation,
           },
         };
       }),

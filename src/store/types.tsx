@@ -25,6 +25,7 @@ export type DrawnInterpretation = {
   keywords: Array<string>;
   description: string;
   affirmation: string;
+  orientation: Orientation;
 };
 export interface Store {
   interpretations: Array<Interpretation>;
@@ -58,9 +59,10 @@ export const emptyInterpretation = {
     reversed: [],
   },
 };
-export const emptyDrawnInterpretation = {
+export const emptyDrawnInterpretation: DrawnInterpretation = {
   name: "",
   keywords: [],
   description: "",
   affirmation: "",
+  orientation: "upright",
 };

@@ -14,7 +14,7 @@ function ShareButtonContainer() {
   const data = {
     title: interpretation.name,
     text: interpretation.affirmation,
-    url: getCardUrl(card.number),
+    url: getCardUrl(card.number, card.orientation),
   };
   const canShare =
     isInterpretationShowing && navigator.canShare && navigator.canShare(data);
