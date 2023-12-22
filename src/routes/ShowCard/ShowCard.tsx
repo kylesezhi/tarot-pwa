@@ -32,19 +32,35 @@ function ShowCard() {
 
   return (
     <>
+      {/* TODO make this a component */}
       <Helmet>
+        {/* HTML Meta Tags */}
         <meta
           name="description"
           content={interpretation.description[orientation]}
         />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={title} />
+
+        {/* Facebook Meta Tags */}
+        <meta property="og:url" content={getCardUrl(number)} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={`Daily Tarot | ${title}`} />
         <meta
           property="og:description"
           content={interpretation.description[orientation]}
         />
-        <meta property="og:url" content={getCardUrl(number)} />
+        {/* <meta property="og:image" content="" /> */}
         <meta property="og:site_name" content="Daily Tarot" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="tarot-tarot.netlify.app" />
+        <meta property="twitter:url" content={getCardUrl(number)} />
+        <meta name="twitter:title" content={`Daily Tarot | ${title}`} />
+        <meta
+          name="twitter:description"
+          content={interpretation.description[orientation]}
+        />
+        {/* <meta name="twitter:image" content="" /> */}
       </Helmet>
       <div onClick={onClick} className="show-card">
         <TopNavigation>
