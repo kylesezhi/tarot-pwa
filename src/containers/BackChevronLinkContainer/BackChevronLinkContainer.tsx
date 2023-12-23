@@ -3,9 +3,17 @@ import "./BackChevronLinkContainer.css";
 import { useNavigate } from "react-router-dom";
 import BackChevron from "../../components/BackChevron/BackChevron";
 
-function BackChevronLinkContainer() {
+interface BackChevronLinkContainerProps {
+  navigateTo: string;
+}
+
+function BackChevronLinkContainer({
+  navigateTo,
+}: BackChevronLinkContainerProps) {
   const navigate = useNavigate();
-  const handleClick = () => navigate("/cards");
+  const handleClick = () => {
+    navigate(navigateTo);
+  };
 
   return (
     <div onClick={handleClick}>

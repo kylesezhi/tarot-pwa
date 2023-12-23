@@ -32,6 +32,7 @@ function ShowCard() {
   const title = `${orientation === "reversed" ? "Reversed " : ""}${
     interpretation.name
   }`;
+  const cardUrl = `https://tarot-images.netlify.app/${number}.webp`;
 
   return (
     <>
@@ -51,7 +52,7 @@ function ShowCard() {
           property="og:description"
           content={interpretation.description[orientation]}
         />
-        {/* <meta property="og:image" content="" /> */}
+        <meta property="og:image" content={cardUrl} />
         <meta property="og:site_name" content="Daily Tarot" />
 
         {/* Twitter Meta Tags */}
@@ -66,11 +67,11 @@ function ShowCard() {
           name="twitter:description"
           content={interpretation.description[orientation]}
         />
-        {/* <meta name="twitter:image" content="" /> */}
+        <meta name="twitter:image" content={cardUrl} />
       </Helmet>
       <ScrollToTop />
       <TopNavigation>
-        <BackChevronLinkContainer />
+        <BackChevronLinkContainer navigateTo="/cards" />
       </TopNavigation>
       <div onClick={onClick} className="show-card">
         <div className="show-tarot-card">

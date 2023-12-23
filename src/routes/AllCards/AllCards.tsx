@@ -9,7 +9,7 @@ function AllCards() {
   return (
     <div className="all-cards">
       <TopNavigation>
-        <BackChevronLinkContainer />
+        <BackChevronLinkContainer navigateTo="/" />
       </TopNavigation>
       {interpretations.map((card, number) => (
         <StaticTarotCardContainer
