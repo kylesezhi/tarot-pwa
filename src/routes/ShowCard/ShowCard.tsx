@@ -12,6 +12,7 @@ import Description from "../../components/Description/Description";
 import BackChevronLinkContainer from "../../containers/BackChevronLinkContainer/BackChevronLinkContainer";
 import { getCardUrl, parseOrientation, parseNum } from "../../utils/helpers";
 import { Interpretation } from "../../store/types";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 function ShowCard() {
   const navigate = useNavigate();
@@ -67,10 +68,11 @@ function ShowCard() {
         />
         {/* <meta name="twitter:image" content="" /> */}
       </Helmet>
+      <ScrollToTop />
+      <TopNavigation>
+        <BackChevronLinkContainer />
+      </TopNavigation>
       <div onClick={onClick} className="show-card">
-        <TopNavigation>
-          <BackChevronLinkContainer />
-        </TopNavigation>
         <div className="show-tarot-card">
           <TarotCardImage number={number} orientation={orientation} />
         </div>

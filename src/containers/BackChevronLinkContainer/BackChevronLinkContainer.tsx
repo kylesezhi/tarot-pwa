@@ -5,7 +5,7 @@ import BackChevron from "../../components/BackChevron/BackChevron";
 
 function BackChevronLinkContainer() {
   const navigate = useNavigate();
-  const handleClick = () => navigate(-1);
+  const handleClick = () => navigate("/cards");
 
   return (
     <div onClick={handleClick}>
