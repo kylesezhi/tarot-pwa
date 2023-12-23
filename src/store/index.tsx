@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
-import { getRandom } from "../utils/helpers";
+import { getRandom, getTitle } from "../utils/helpers";
 import {
   BACK_OF_CARD_NUMBER,
   Card,
@@ -34,11 +34,9 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
         if (card.number !== BACK_OF_CARD_NUMBER) {
           return {};
         }
-        const drawnCard = getRandom(deck);
+        const drawnCard: Card = getRandom(deck);
         const interpretation = tarot_interpretations[drawnCard.number];
-        const name = `${
-          drawnCard.orientation === "reversed" ? "Reversed " : ""
-        }${interpretation.name}`;
+        const name = getTitle(interpretation.name, drawnCard.orientation);
         const affirmation = getRandom(
           interpretation.affirmations[card.orientation],
         );

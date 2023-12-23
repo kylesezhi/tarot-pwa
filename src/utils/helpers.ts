@@ -26,4 +26,8 @@ const getCardUrl = (number: number, orientation: Orientation): string => {
   return `${window.location.origin}/cards/${number}/${orientation}`;
 };
 
-export { getRandom, parseNum, getCardUrl, parseOrientation };
+const getTitle = (name: string, orientation: Orientation) => {
+  return orientation === "reversed" ? `Reversed ${name}` : name;
+};
+
+export { getRandom, parseNum, getCardUrl, parseOrientation, getTitle };

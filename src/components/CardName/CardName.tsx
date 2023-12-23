@@ -1,14 +1,13 @@
 import React from "react";
 import "./CardName.css";
+import { getTitle } from "../../utils/helpers";
 
 interface TitleProps {
   title: string;
-  isReversed?: boolean;
 }
 
-function CardName({ title, isReversed = false }: TitleProps) {
-  const finalTitle = `${isReversed ? "Reversed " : ""}${title}`;
-  return <div className="card-name">{finalTitle}</div>;
+function CardName({ title }: TitleProps) {
+  return <div className="card-name">{getTitle(title, "upright")}</div>;
 }
 
 export default CardName;
