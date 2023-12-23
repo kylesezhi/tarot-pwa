@@ -10,7 +10,7 @@ function Affirmations({ affirmations }: AffirmationProps) {
   return (
     <div className="affirmations">
       {affirmations.map((affirmation) => (
-        <Affirmation affirmation={affirmation} />
+        <Affirmation key={affirmation} affirmation={affirmation} />
       ))}
     </div>
   );

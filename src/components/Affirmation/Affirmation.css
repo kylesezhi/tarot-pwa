@@ -2,9 +2,9 @@
   font-family: 'LoraRegular';
   font-size: 1.4rem;
   color: white;
-  padding-top: 25px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 25px;
-  min-width: 100%;
+  padding-top: 5vmin;
+  padding-left: 5vmin;
+  padding-right: 5vmin;
+  padding-bottom: 5vmin;
+  min-width: 80vmin;
 }
