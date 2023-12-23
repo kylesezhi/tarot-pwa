@@ -5,7 +5,7 @@ import TopNavigation from "../../components/TopNavigation/TopNavigation";
 import "./ShowCard.css";
 import { useParams, useNavigate } from "react-router-dom";
 import { useTarotStore } from "../../store";
-import Affirmation from "../../components/Affirmation/Affirmation";
+import Affirmations from "../../components/Affirmations/Affirmations";
 import Title from "../../components/Title/Title";
 import Keywords from "../../components/Keywords/Keywords";
 import Description from "../../components/Description/Description";
@@ -78,9 +78,7 @@ function ShowCard() {
         </div>
       </div>
       <div>
-        <Affirmation
-          affirmation={interpretation.affirmations[orientation][0]}
-        />
+        <Affirmations affirmations={interpretation.affirmations[orientation]} />
         <Title title={title} />
         <Keywords>{interpretation.keywords[orientation]}</Keywords>
         <Description>{interpretation.description[orientation]}</Description>

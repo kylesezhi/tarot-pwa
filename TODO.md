@@ -1,6 +1,5 @@
 # TODO
 
-1. Allow to scroll through affirmations
 1. Add images to share: https://www.codemzy.com/blog/hosting-image-files-without-bloating-git
 1. Reverse card is animated in ShowCard
 1. Get back button to work on fortune page (App)
