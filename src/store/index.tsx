@@ -38,17 +38,17 @@ export const useTarotStore = create<Store, [["zustand/devtools", Store]]>(
         const interpretation = tarot_interpretations[drawnCard.number];
         const name = getTitle(interpretation.name, drawnCard.orientation);
         const affirmation = getRandom(
-          interpretation.affirmations[card.orientation],
+          interpretation.affirmations[drawnCard.orientation],
         );
         return {
           card: drawnCard,
           isCardShowing: true,
           interpretation: {
             name,
-            keywords: interpretation.keywords[card.orientation],
-            description: interpretation.description[card.orientation],
+            keywords: interpretation.keywords[drawnCard.orientation],
+            description: interpretation.description[drawnCard.orientation],
             affirmation,
-            orientation: card.orientation,
+            orientation: drawnCard.orientation,
           },
         };
       }),
