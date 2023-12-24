@@ -9,10 +9,16 @@ import Title from "../../components/Title/Title";
 import Keywords from "../../components/Keywords/Keywords";
 import Description from "../../components/Description/Description";
 import BackChevronLinkContainer from "../../containers/BackChevronLinkContainer/BackChevronLinkContainer";
-import { parseOrientation, parseNum, getTitle } from "../../utils/helpers";
+import {
+  parseOrientation,
+  parseNum,
+  getTitle,
+  drawInterpretation,
+} from "../../utils/helpers";
 import { Interpretation } from "../../store/types";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import ShowCardHeader from "../../components/ShowCardHeader/ShowCardHeader";
+import ShareButtonContainer from "../../containers/ShareButtonContainer/ShareButtonContainer";
 
 function ShowCard() {
   const navigate = useNavigate();
@@ -38,6 +44,13 @@ function ShowCard() {
       <ScrollToTop />
       <TopNavigation>
         <BackChevronLinkContainer navigateTo="/cards" />
+        <ShareButtonContainer
+          show
+          interpretation={drawInterpretation(interpretation, {
+            number,
+            orientation,
+          })}
+        />
       </TopNavigation>
       <div onClick={onClick} className="show-card">
         <div className="show-tarot-card">

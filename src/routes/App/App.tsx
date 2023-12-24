@@ -12,6 +12,10 @@ import ShowAllButton from "../../components/ShowAllButton/ShowAllButton";
 
 function App() {
   const shuffleDeck = useTarotStore((state) => state.shuffleDeck);
+  const interpretation = useTarotStore((state) => state.interpretation);
+  const isInterpretationShowing = useTarotStore(
+    (state) => state.isInterpretationShowing,
+  );
 
   // Shuffle the deck on initial app load
   useEffect(shuffleDeck, [shuffleDeck]);
@@ -24,7 +28,10 @@ function App() {
           <Link to="cards">
             <ShowAllButton />
           </Link>
-          <ShareButtonContainer />
+          <ShareButtonContainer
+            interpretation={interpretation}
+            show={isInterpretationShowing}
+          />
         </TopNavigation>
         <TarotCardContainer />
       </div>

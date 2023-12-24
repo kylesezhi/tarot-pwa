@@ -1,4 +1,9 @@
-import { Orientation } from "../store/types";
+import {
+  Orientation,
+  Interpretation,
+  DrawnInterpretation,
+  Card,
+} from "../store/types";
 
 const getRandom = (array: Array<any>): any =>
   array[Math.floor(Math.random() * array.length)];
@@ -30,4 +35,29 @@ const getTitle = (name: string, orientation: Orientation) => {
   return orientation === "reversed" ? `Reversed ${name}` : name;
 };
 
-export { getRandom, parseNum, getCardUrl, parseOrientation, getTitle };
+const drawInterpretation = (
+  interpretation: Interpretation,
+  drawnCard: Card,
+): DrawnInterpretation => {
+  const name = getTitle(interpretation.name, drawnCard.orientation);
+  const affirmation = getRandom(
+    interpretation.affirmations[drawnCard.orientation],
+  );
+  return {
+    name,
+    number: drawnCard.number,
+    keywords: interpretation.keywords[drawnCard.orientation],
+    description: interpretation.description[drawnCard.orientation],
+    affirmation,
+    orientation: drawnCard.orientation,
+  };
+};
+
+export {
+  getRandom,
+  parseNum,
+  getCardUrl,
+  parseOrientation,
+  getTitle,
+  drawInterpretation,
+};

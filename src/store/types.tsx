@@ -22,6 +22,7 @@ export type Interpretation = {
 };
 export type DrawnInterpretation = {
   name: string;
+  number: number;
   keywords: Array<string>;
   description: string;
   affirmation: string;
@@ -61,6 +62,7 @@ export const emptyInterpretation = {
 };
 export const emptyDrawnInterpretation: DrawnInterpretation = {
   name: "",
+  number: BACK_OF_CARD_NUMBER,
   keywords: [],
   description: "",
   affirmation: "",

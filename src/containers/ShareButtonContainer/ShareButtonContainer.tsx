@@ -1,23 +1,22 @@
 import React from "react";
 import "./ShareButtonContainer.css";
-import { useTarotStore } from "../../store";
 import ShareButton from "../../components/ShareButton/ShareButton";
 import { getCardUrl } from "../../utils/helpers";
-
-function ShareButtonContainer() {
-  const isInterpretationShowing = useTarotStore(
-    (state) => state.isInterpretationShowing,
-  );
-  const interpretation = useTarotStore((state) => state.interpretation);
-  const card = useTarotStore((state) => state.card);
-
+import { DrawnInterpretation } from "../../store/types";
+interface ShareButtonContainerProps {
+  interpretation: DrawnInterpretation;
+  show: boolean;
+}
+function ShareButtonContainer({
+  interpretation,
+  show,
+}: ShareButtonContainerProps) {
   const data = {
     title: interpretation.name,
     text: interpretation.affirmation,
-    url: getCardUrl(card.number, card.orientation),
+    url: getCardUrl(interpretation.number, interpretation.orientation),
   };
-  const canShare =
-    isInterpretationShowing && navigator.canShare && navigator.canShare(data);
+  const canShare = show && navigator.canShare && navigator.canShare(data);
 
   const onClick = async () => {
     if (!canShare) {
