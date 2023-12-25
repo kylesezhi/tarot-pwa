@@ -12,8 +12,18 @@ function TarotCardImage({
   orientation = "upright",
 }: TarotImageProps) {
   const tarotImage = require(`../../assets/Cards/${number}.webp`);
+  const style = {
+    transform: `rotate(${orientation === "upright" ? 0 : 180}deg)`,
+  };
 
-  return <img src={tarotImage} className="tarot-image" alt="tarot-card" />;
+  return (
+    <img
+      src={tarotImage}
+      className="tarot-image"
+      style={style}
+      alt="tarot-card"
+    />
+  );
 }
 
 export default TarotCardImage;
