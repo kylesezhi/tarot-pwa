@@ -27,7 +27,7 @@ function StaticTarotCardContainer({
 
   const { opacity } = useSpring({
     opacity: load ? 1 : 0,
-    height: load ? "90vmin" : "40vmin",
+    height: load ? "60vh" : "40vmin",
     config: config.molasses,
   });
 

@@ -12,8 +12,13 @@ body {
 
 .show-tarot-card {
   border-radius: 10px;
-  height: 90vmin;
+  height: 60vh;
   width: auto;
   object-fit: contain;
   will-change: transform, opacity;
+}
+
+.interpretations {
+  padding-left: 5vmin;
+  padding-right: 5vmin;
 }

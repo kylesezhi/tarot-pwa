@@ -57,7 +57,7 @@ function ShowCard() {
           <RotateTarotCardImage number={number} orientation={orientation} />
         </div>
       </div>
-      <div>
+      <div className="interpretations">
         <Affirmations affirmations={interpretation.affirmations[orientation]} />
         <Title title={title} />
         <Keywords>{interpretation.keywords[orientation]}</Keywords>

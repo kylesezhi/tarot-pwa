@@ -1,7 +1,7 @@
 .tarot-sides-container {
   display: flex;
   justify-content: center;
-  height: 90vmin;
+  height: 60vh;
 }
 
 .tarot-card {
