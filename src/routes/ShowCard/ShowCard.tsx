@@ -1,5 +1,4 @@
 import React from "react";
-import TarotCardImage from "../../components/TarotCardImage/TarotCardImage";
 import TopNavigation from "../../components/TopNavigation/TopNavigation";
 import "./ShowCard.css";
 import { useParams, useNavigate } from "react-router-dom";
@@ -19,6 +18,7 @@ import { Interpretation } from "../../store/types";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import ShowCardHeader from "../../components/ShowCardHeader/ShowCardHeader";
 import ShareButtonContainer from "../../containers/ShareButtonContainer/ShareButtonContainer";
+import RotateTarotCardImage from "../../components/RotateTarotCardImage/RotateTarotCardImage";
 
 function ShowCard() {
   const navigate = useNavigate();
@@ -54,7 +54,7 @@ function ShowCard() {
       </TopNavigation>
       <div onClick={onClick} className="show-card">
         <div className="show-tarot-card">
-          <TarotCardImage number={number} orientation={orientation} />
+          <RotateTarotCardImage number={number} orientation={orientation} />
         </div>
       </div>
       <div>
