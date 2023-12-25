@@ -1,9 +1,7 @@
 # TODO
 
-1. Reverse card is animated in ShowCard
 1. Start with infinity symbol, fade out to card fading in
 1. Size of card - make bigger on mobile, smaller in web
-1. Add image to share content
 1. 3D for card flipping - https://codesandbox.io/p/sandbox/enter-portals-9m4tpc?file=%2Fsrc%2Findex.js
 1. Get back button to work on fortune page (App)
 1. Animate click/tap card - particles
