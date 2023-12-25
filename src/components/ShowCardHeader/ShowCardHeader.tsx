@@ -16,7 +16,7 @@ function ShowCardHeader({
   interpretation,
 }: ShowCardHeaderProps) {
   const title = getTitle(interpretation.name, orientation);
-  const cardUrl = `https://tarot-images.netlify.app/${number}.webp`;
+  const imageUrl = `https://tarot-images.netlify.app/${number}.webp`;
 
   return (
     <>
@@ -35,7 +35,7 @@ function ShowCardHeader({
           property="og:description"
           content={interpretation.description[orientation]}
         />
-        <meta property="og:image" content={cardUrl} />
+        <meta property="og:image" content={imageUrl} />
         <meta property="og:site_name" content="Daily Tarot" />
 
         {/* Twitter Meta Tags */}
@@ -50,7 +50,7 @@ function ShowCardHeader({
           name="twitter:description"
           content={interpretation.description[orientation]}
         />
-        <meta name="twitter:image" content={cardUrl} />
+        <meta name="twitter:image" content={imageUrl} />
       </Helmet>
     </>
   );
