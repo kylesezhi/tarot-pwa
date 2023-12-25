@@ -24,7 +24,7 @@ function InterpretationContainer() {
   };
 
   return (
-    <animated.div style={style}>
+    <animated.div className="interpretation-container" style={style}>
       <Affirmation affirmation={interpretation.affirmation} />
       <Title title={interpretation.name} />
       <Keywords>{interpretation.keywords}</Keywords>
