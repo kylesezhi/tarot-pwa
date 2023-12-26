@@ -5,7 +5,6 @@
 1. Fix size of navbar in browser
 1. Start with infinity symbol, fade out to card fading in
 1. 3D for card flipping - https://codesandbox.io/p/sandbox/enter-portals-9m4tpc?file=%2Fsrc%2Findex.js
-1. Get back button to work on fortune page (App)
 1. Animate click/tap card - particles
 1. Fix fast change to back on flip back
 1. Use state machine
