@@ -60,8 +60,10 @@
     ]
   },
   "devDependencies": {
+    "@types/got": "9.6.12",
     "@types/react-helmet": "6.1.11",
     "devtools": "8.26.1",
+    "got": "14.0.0",
     "http-server": "14.1.1",
     "zustand": "4.4.7"
   }

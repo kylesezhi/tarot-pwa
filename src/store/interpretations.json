@@ -1,6 +1,7 @@
 [
   {
     "name": "The Fool",
+    "type": "major",
     "keywords": {
       "upright": [
         "New beginnings",
@@ -40,6 +41,7 @@
   },
   {
     "name": "The Magician",
+    "type": "major",
     "keywords": {
       "upright": [
         "Manifestation",
@@ -78,6 +80,7 @@
   },
   {
     "name": "The High Priestess",
+    "type": "major",
     "keywords": {
       "upright": [
         "Intuition",
@@ -117,6 +120,7 @@
   },
   {
     "name": "The Empress",
+    "type": "major",
     "keywords": {
       "upright": [
         "Abundance",
@@ -160,6 +164,7 @@
   },
   {
     "name": "The Emperor",
+    "type": "major",
     "keywords": {
       "upright": [
         "Authority",
@@ -195,6 +200,7 @@
   },
   {
     "name": "The Hierophant",
+    "type": "major",
     "keywords": {
       "upright": [
         "Tradition",
@@ -229,6 +235,7 @@
   },
   {
     "name": "The Lovers",
+    "type": "major",
     "keywords": {
       "upright": [
         "Love",
@@ -271,6 +278,7 @@
   },
   {
     "name": "The Chariot",
+    "type": "major",
     "keywords": {
       "upright": [
         "Determination",
@@ -306,6 +314,7 @@
   },
   {
     "name": "Strength",
+    "type": "major",
     "keywords": {
       "upright": [
         "Inner Strength",
@@ -345,6 +354,7 @@
   },
   {
     "name": "The Hermit",
+    "type": "major",
     "keywords": {
       "upright": [
         "Introspection",
@@ -384,6 +394,7 @@
   },
   {
     "name": "Wheel of Fortune",
+    "type": "major",
     "keywords": {
       "upright": [
         "Chance",
@@ -423,6 +434,7 @@
   },
   {
     "name": "Justice",
+    "type": "major",
     "keywords": {
       "upright": [
         "Balance",
@@ -466,6 +478,7 @@
   },
   {
     "name": "The Hanged Man",
+    "type": "major",
     "keywords": {
       "upright": [
         "Surrender",
@@ -503,6 +516,7 @@
   },
   {
     "name": "Death",
+    "type": "major",
     "keywords": {
       "upright": [
         "Endings",
@@ -541,6 +555,7 @@
   },
   {
     "name": "Temperance",
+    "type": "major",
     "keywords": {
       "upright": [
         "balance",
@@ -582,6 +597,7 @@
   },
   {
     "name": "The Devil",
+    "type": "major",
     "keywords": {
       "upright": [
         "Temptation",
@@ -620,6 +636,7 @@
   },
   {
     "name": "The Tower",
+    "type": "major",
     "keywords": {
       "upright": [
         "Sudden change",
@@ -655,6 +672,7 @@
   },
   {
     "name": "The Star",
+    "type": "major",
     "keywords": {
       "upright": [
         "Hope",
@@ -694,6 +712,7 @@
   },
   {
     "name": "The Moon",
+    "type": "major",
     "keywords": {
       "upright": [
         "Illusion",
@@ -731,6 +750,7 @@
   },
   {
     "name": "The Sun",
+    "type": "major",
     "keywords": {
       "upright": [
         "Joy",
@@ -768,6 +788,7 @@
   },
   {
     "name": "Judgement",
+    "type": "major",
     "keywords": {
       "upright": [
         "Awakening",
@@ -805,6 +826,7 @@
   },
   {
     "name": "The World",
+    "type": "major",
     "keywords": {
       "upright": [
         "Completion",
@@ -842,6 +864,7 @@
   },
   {
     "name": "Ace of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "New beginnings",
@@ -882,6 +905,7 @@
   },
   {
     "name": "Two of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Partnership",
@@ -921,6 +945,7 @@
   },
   {
     "name": "Three of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Celebration",
@@ -956,6 +981,7 @@
   },
   {
     "name": "Four of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Stagnation",
@@ -997,6 +1023,7 @@
   },
   {
     "name": "Five of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Disappointment",
@@ -1036,6 +1063,7 @@
   },
   {
     "name": "Six of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Nostalgia",
@@ -1075,6 +1103,7 @@
   },
   {
     "name": "Seven of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Imagination",
@@ -1114,6 +1143,7 @@
   },
   {
     "name": "Eight of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Transition",
@@ -1155,6 +1185,7 @@
   },
   {
     "name": "Nine of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Contentment",
@@ -1195,6 +1226,7 @@
   },
   {
     "name": "Ten of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Happiness",
@@ -1234,6 +1266,7 @@
   },
   {
     "name": "Page of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Creativity",
@@ -1276,6 +1309,7 @@
   },
   {
     "name": "Knight of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Creativity",
@@ -1320,6 +1354,7 @@
   },
   {
     "name": "Queen of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Nurturing",
@@ -1359,6 +1394,7 @@
   },
   {
     "name": "King of Cups",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Compassion",
@@ -1400,6 +1436,7 @@
   },
   {
     "name": "Ace of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Clarity",
@@ -1438,6 +1475,7 @@
   },
   {
     "name": "Two of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Difficult decision",
@@ -1475,6 +1513,7 @@
   },
   {
     "name": "Three of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Heartbreak",
@@ -1514,6 +1553,7 @@
   },
   {
     "name": "Four of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Rest",
@@ -1555,6 +1595,7 @@
   },
   {
     "name": "Five of Swords",
+    "type": "minor",
     "keywords": {
       "upright": ["Conflict", "Loss", "Victory", "Deception", "Cunning"],
       "reversed": [
@@ -1582,6 +1623,7 @@
   },
   {
     "name": "Six of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Transition",
@@ -1621,6 +1663,7 @@
   },
   {
     "name": "Seven of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Deception",
@@ -1656,6 +1699,7 @@
   },
   {
     "name": "Eight of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Feeling trapped",
@@ -1691,6 +1735,7 @@
   },
   {
     "name": "Nine of Swords",
+    "type": "minor",
     "keywords": {
       "upright": ["Anxiety", "Fear", "Worry", "Sleeplessness", "Nightmares"],
       "reversed": [
@@ -1718,6 +1763,7 @@
   },
   {
     "name": "Ten of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Endings",
@@ -1755,6 +1801,7 @@
   },
   {
     "name": "Page of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "New ideas, communication, intelligence, curiosity",
@@ -1782,6 +1829,7 @@
   },
   {
     "name": "Knight of Swords",
+    "type": "minor",
     "keywords": {
       "upright": ["Action", "Determination", "Intellect", "Challenge", "Focus"],
       "reversed": [
@@ -1813,6 +1861,7 @@
   },
   {
     "name": "Queen of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Clarity",
@@ -1862,6 +1911,7 @@
   },
   {
     "name": "King of Swords",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Intellectual power",
@@ -1904,6 +1954,7 @@
   },
   {
     "name": "Ace of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Creativity",
@@ -1937,6 +1988,7 @@
   },
   {
     "name": "Two of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Planning",
@@ -1974,6 +2026,7 @@
   },
   {
     "name": "Three of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Exploration",
@@ -2016,6 +2069,7 @@
   },
   {
     "name": "Four of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Celebration",
@@ -2053,6 +2107,7 @@
   },
   {
     "name": "Five of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Conflict",
@@ -2088,6 +2143,7 @@
   },
   {
     "name": "Six of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Victory",
@@ -2123,6 +2179,7 @@
   },
   {
     "name": "Seven of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Competition",
@@ -2158,6 +2215,7 @@
   },
   {
     "name": "Eight of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Movement",
@@ -2198,6 +2256,7 @@
   },
   {
     "name": "Nine of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Defense, resilience, vigilance, perseverance",
@@ -2225,6 +2284,7 @@
   },
   {
     "name": "Ten of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Burden",
@@ -2252,6 +2312,7 @@
   },
   {
     "name": "Page of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "New beginnings",
@@ -2289,6 +2350,7 @@
   },
   {
     "name": "Knight of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Action",
@@ -2324,6 +2386,7 @@
   },
   {
     "name": "Queen of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Passionate",
@@ -2361,6 +2424,7 @@
   },
   {
     "name": "King of Wands",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Visionary Leader",
@@ -2402,6 +2466,7 @@
   },
   {
     "name": "Ace of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "abundance",
@@ -2440,6 +2505,7 @@
   },
   {
     "name": "Two of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "balance",
@@ -2475,6 +2541,7 @@
   },
   {
     "name": "Three of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Teamwork",
@@ -2511,6 +2578,7 @@
   },
   {
     "name": "Four of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Material abundance",
@@ -2546,6 +2614,7 @@
   },
   {
     "name": "Five of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Financial hardship",
@@ -2579,6 +2648,7 @@
   },
   {
     "name": "Six of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Generosity",
@@ -2616,6 +2686,7 @@
   },
   {
     "name": "Seven of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Progress",
@@ -2653,6 +2724,7 @@
   },
   {
     "name": "Eight of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Work",
@@ -2690,6 +2762,7 @@
   },
   {
     "name": "Nine of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Abundance",
@@ -2730,6 +2803,7 @@
   },
   {
     "name": "Ten of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "abundance",
@@ -2773,6 +2847,7 @@
   },
   {
     "name": "Page of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "New beginnings",
@@ -2814,6 +2889,7 @@
   },
   {
     "name": "Knight of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Duty",
@@ -2849,6 +2925,7 @@
   },
   {
     "name": "Queen of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "abundance",
@@ -2887,6 +2964,7 @@
   },
   {
     "name": "King of Pentacles",
+    "type": "minor",
     "keywords": {
       "upright": [
         "Material wealth",

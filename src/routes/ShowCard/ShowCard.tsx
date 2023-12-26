@@ -19,6 +19,7 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import ShowCardHeader from "../../components/ShowCardHeader/ShowCardHeader";
 import ShareButtonContainer from "../../containers/ShareButtonContainer/ShareButtonContainer";
 import RotateTarotCardImage from "../../components/RotateTarotCardImage/RotateTarotCardImage";
+import LabyrinthosLink from "../../components/LabyrinthosLink/LabyrinthosLink";
 
 function ShowCard() {
   const navigate = useNavigate();
@@ -62,6 +63,9 @@ function ShowCard() {
         <Title title={title} />
         <Keywords>{interpretation.keywords[orientation]}</Keywords>
         <Description>{interpretation.description[orientation]}</Description>
+        <LabyrinthosLink name={interpretation.name} type={interpretation.type}>
+          more &gt;
+        </LabyrinthosLink>
       </div>
     </>
   );

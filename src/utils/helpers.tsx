@@ -45,6 +45,7 @@ const drawInterpretation = (
   );
   return {
     name,
+    type: interpretation.type,
     number: drawnCard.number,
     keywords: interpretation.keywords[drawnCard.orientation],
     description: interpretation.description[drawnCard.orientation],
@@ -53,6 +54,14 @@ const drawInterpretation = (
   };
 };
 
+const getLabyrinthosUrl = (name: string, type: string): string =>
+  `https://labyrinthos.co/blogs/tarot-card-meanings-list/${name
+    .toLowerCase()
+    .split(" ")
+    .join("-")}-meaning-${
+    type === "major" ? "major-arcana-" : ""
+  }tarot-card-meanings`;
+
 export {
   getRandom,
   parseNum,
@@ -60,4 +69,5 @@ export {
   parseOrientation,
   getTitle,
   drawInterpretation,
+  getLabyrinthosUrl,
 };

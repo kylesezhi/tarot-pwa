@@ -6,9 +6,13 @@ import Title from "../../components/Title/Title";
 import Keywords from "../../components/Keywords/Keywords";
 import Description from "../../components/Description/Description";
 import Affirmation from "../../components/Affirmation/Affirmation";
+import LabyrinthosLink from "../../components/LabyrinthosLink/LabyrinthosLink";
 
 function InterpretationContainer() {
   const interpretation = useTarotStore((state) => state.interpretation);
+  const name = useTarotStore((state) => state.getInterpretation)(
+    interpretation.number,
+  ).name;
   const isInterpretationShowing = useTarotStore(
     (state) => state.isInterpretationShowing,
   );
@@ -29,6 +33,9 @@ function InterpretationContainer() {
       <Title title={interpretation.name} />
       <Keywords>{interpretation.keywords}</Keywords>
       <Description>{interpretation.description}</Description>
+      <LabyrinthosLink name={name} type={interpretation.type}>
+        more &gt;
+      </LabyrinthosLink>
     </animated.div>
   );
 }

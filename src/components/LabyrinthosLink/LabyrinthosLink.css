@@ -1,0 +1,9 @@
+.labyrinthos-link {
+  font-family: 'HeeboRegular';
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  padding-top: 2vmin;
+  opacity: 0.7;
+  display: block;
+}
