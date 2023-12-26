@@ -9,14 +9,16 @@ interface DescriptionProps {
 }
 
 function LabyrinthosLink({ children, name, type }: DescriptionProps) {
+  const link = getLabyrinthosUrl(name, type);
+  if (!link) {
+    return <div id="labyrinthos-link"></div>;
+  }
   return (
-    <a
-      href={getLabyrinthosUrl(name, type)}
-      target="blank"
-      className="labyrinthos-link"
-    >
-      {children}
-    </a>
+    <div id="labyrinthos-link">
+      <a href={link} target="blank" className="labyrinthos-link">
+        {children}
+      </a>
+    </div>
   );
 }
 

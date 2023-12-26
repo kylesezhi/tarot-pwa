@@ -1,5 +1,6 @@
 # TODO
 
+1. Fix fade out of labyrinthos link
 1. Improve affirmationS component styling
 1. Fix size of navbar in browser
 1. Start with infinity symbol, fade out to card fading in

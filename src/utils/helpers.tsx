@@ -54,13 +54,16 @@ const drawInterpretation = (
   };
 };
 
-const getLabyrinthosUrl = (name: string, type: string): string =>
-  `https://labyrinthos.co/blogs/tarot-card-meanings-list/${name
-    .toLowerCase()
-    .split(" ")
-    .join("-")}-meaning-${
-    type === "major" ? "major-arcana-" : ""
-  }tarot-card-meanings`;
+const getLabyrinthosUrl = (name: string, type: string): string => {
+  return name
+    ? `https://labyrinthos.co/blogs/tarot-card-meanings-list/${name
+        .toLowerCase()
+        .split(" ")
+        .join("-")}-meaning-${
+        type === "major" ? "major-arcana-" : ""
+      }tarot-card-meanings`
+    : "";
+};
 
 export {
   getRandom,
