@@ -23,7 +23,7 @@ function TarotCard({
   const { transform, opacity, height } = useSpring({
     opacity: !load ? 0 : isCardShowing ? 0 : 1,
     transform: `perspective(900px) rotateY(${!isCardShowing ? 180 : 0}deg)`,
-    height: load ? "60vh" : "30vh",
+    height: load ? "60vh" : "20vh",
     config: config.molasses,
   });
   const frontStyle = {

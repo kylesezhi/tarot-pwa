@@ -1804,12 +1804,23 @@
     "type": "minor",
     "keywords": {
       "upright": [
-        "New ideas, communication, intelligence, curiosity",
-        "Mentality, intellect, analysis, logic"
+        "New ideas",
+        "communication",
+        "intelligence",
+        "curiosity",
+        "Mentality",
+        "intellect",
+        "analysis",
+        "logic"
       ],
       "reversed": [
-        "Misunderstandings, arguments, delay, gossip",
-        "Immaturity, impulsiveness, lack of focus"
+        "Misunderstandings",
+        "arguments",
+        "delay",
+        "gossip",
+        "Immaturity",
+        "impulsiveness",
+        "lack of focus"
       ]
     },
     "description": {

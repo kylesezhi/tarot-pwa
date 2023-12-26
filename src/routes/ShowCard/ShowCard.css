@@ -13,6 +13,7 @@ body {
 .show-tarot-card {
   border-radius: 10px;
   height: 60vh;
+  aspect-ratio: 412 / 686;
   width: auto;
   object-fit: contain;
   will-change: transform, opacity;
