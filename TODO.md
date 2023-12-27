@@ -1,6 +1,6 @@
 # TODO
 
-1. Improve affirmationS component styling
+1. style the more > link
 1. Category filters for /cards
 1. Start with infinity symbol, fade out to card fading in
 1. 3D for card flipping - https://codesandbox.io/p/sandbox/enter-portals-9m4tpc?file=%2Fsrc%2Findex.js

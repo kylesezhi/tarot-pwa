@@ -1,5 +1,6 @@
 import React from "react";
-import "./Affirmations.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import Affirmation from "../Affirmation/Affirmation";
 
 interface AffirmationProps {
@@ -8,13 +9,13 @@ interface AffirmationProps {
 
 function Affirmations({ affirmations }: AffirmationProps) {
   return (
-    <div className="affirmations">
+    <Swiper spaceBetween={50} slidesPerView={1}>
       {affirmations.map((affirmation) => (
-        <div className="affirmation-container">
+        <SwiperSlide>
           <Affirmation key={affirmation} affirmation={affirmation} />
-        </div>
+        </SwiperSlide>
       ))}
-    </div>
+    </Swiper>
   );
 }
 
