@@ -64,7 +64,7 @@ function ShowCard() {
         <Keywords>{interpretation.keywords[orientation]}</Keywords>
         <Description>{interpretation.description[orientation]}</Description>
         <LabyrinthosLink name={interpretation.name} type={interpretation.type}>
-          more &gt;
+          more
         </LabyrinthosLink>
       </div>
     </>

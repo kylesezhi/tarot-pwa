@@ -1,12 +1,12 @@
 # TODO
 
-1. style the more > link
 1. Category filters for /cards
 1. Start with infinity symbol, fade out to card fading in
 1. 3D for card flipping - https://codesandbox.io/p/sandbox/enter-portals-9m4tpc?file=%2Fsrc%2Findex.js
 1. Animate click/tap card - particles
 1. Fix fast change to back on flip back
 1. Use state machine
+1. Inform user they can update with badge, update button
 1. Add click to display description after interpretation
 1. Ensure offline works
 1. Write tests

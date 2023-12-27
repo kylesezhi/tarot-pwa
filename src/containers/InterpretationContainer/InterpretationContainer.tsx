@@ -34,7 +34,7 @@ function InterpretationContainer() {
       <Keywords>{interpretation.keywords}</Keywords>
       <Description>{interpretation.description}</Description>
       <LabyrinthosLink name={name} type={interpretation.type}>
-        more &gt;
+        more
       </LabyrinthosLink>
     </animated.div>
   );
