@@ -2270,12 +2270,24 @@
     "type": "minor",
     "keywords": {
       "upright": [
-        "Defense, resilience, vigilance, perseverance",
-        "Challenges, obstacles, setbacks, delays"
+        "Defense",
+        "resilience",
+        "vigilance",
+        "perseverance",
+        "Challenges",
+        "obstacles",
+        "setbacks",
+        "delays"
       ],
       "reversed": [
-        "Exhaustion, burnout, giving up, surrender",
-        "Defensiveness, paranoia, distrust, anger"
+        "Exhaustion",
+        "burnout",
+        "giving up",
+        "surrender",
+        "Defensiveness",
+        "paranoia",
+        "distrust",
+        "anger"
       ]
     },
     "description": {
