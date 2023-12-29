@@ -7,10 +7,20 @@ interface AnchorPillProps {
 }
 
 function AnchorPill({ link, title }: AnchorPillProps) {
+  const onClick = () => {
+    const targetElement = document.getElementById(link);
+    if (targetElement === null) {
+      return;
+    }
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
-    <a href={link} className="anchor-pill">
+    <button onClick={onClick} className="anchor-pill">
       {title}
-    </a>
+    </button>
   );
 }
 

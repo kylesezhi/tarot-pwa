@@ -14,11 +14,11 @@ function AllCards() {
         <BackChevronLinkContainer navigateTo="/" />
       </TopNavigation>
       <AnchorPills>
-        <AnchorPill link="#major" title="Major Arcana" />
-        <AnchorPill link="#cups" title="Cups" />
-        <AnchorPill link="#swords" title="Swords" />
-        <AnchorPill link="#wands" title="Wands" />
-        <AnchorPill link="#pentacles" title="Pentacles" />
+        <AnchorPill link="major" title="Major Arcana" />
+        <AnchorPill link="cups" title="Cups" />
+        <AnchorPill link="swords" title="Swords" />
+        <AnchorPill link="wands" title="Wands" />
+        <AnchorPill link="pentacles" title="Pentacles" />
       </AnchorPills>
       <CardGroupWithMeta
         interpretations={interpretations}
