@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: auto;
+}
+
 body {
   background-color: #282c34;
   text-align: center;
