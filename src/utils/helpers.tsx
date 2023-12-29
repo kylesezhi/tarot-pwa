@@ -32,7 +32,14 @@ const getCardUrl = (number: number, orientation: Orientation): string => {
 };
 
 const getTitle = (name: string, orientation: Orientation) => {
-  return orientation === "reversed" ? `Reversed ${name}` : name;
+  if (orientation === "upright") {
+    return name;
+  }
+  const words = name.split(" ");
+  const firstWordIsThe = words[0].toLocaleLowerCase() === "the";
+  return firstWordIsThe
+    ? `The Reversed ${words.slice(1).join(" ")}`
+    : `Reversed ${name}`;
 };
 
 const drawInterpretation = (
