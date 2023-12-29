@@ -37,8 +37,7 @@
         "I acknowledge my naivety and learn from my mistakes.",
         "I ground myself in wisdom before taking another leap of faith."
       ]
-    },
-    "number": 0
+    }
   },
   {
     "name": "The Magician",
@@ -77,8 +76,7 @@
         "I release limiting beliefs and clear blockages to my creative flow.",
         "I seek clarity and alignment to channel my energy effectively."
       ]
-    },
-    "number": 1
+    }
   },
   {
     "name": "The High Priestess",
@@ -118,8 +116,7 @@
         "I acknowledge my hidden fears and seek understanding.",
         "I allow myself to receive the guidance I need, even when it's veiled."
       ]
-    },
-    "number": 2
+    }
   },
   {
     "name": "The Empress",
@@ -163,8 +160,7 @@
         "I seek guidance and support to overcome challenges.",
         "I reconnect with nature and the Earth's nurturing energy."
       ]
-    },
-    "number": 3
+    }
   },
   {
     "name": "The Emperor",
@@ -200,8 +196,7 @@
         "I step away from authoritarian tendencies and nurture compassion and understanding.",
         "I re-evaluate my priorities and seek guidance from mentors or wise counsel."
       ]
-    },
-    "number": 4
+    }
   },
   {
     "name": "The Hierophant",
@@ -236,8 +231,7 @@
         "I break free from dogma and limitations, seeking my own truth.",
         "I challenge outdated systems and pave the way for new perspectives."
       ]
-    },
-    "number": 5
+    }
   },
   {
     "name": "The Lovers",
@@ -280,8 +274,7 @@
         "I step back from imbalances and seek harmony in my relationships.",
         "I prioritize self-love and respect my own values before committing to others."
       ]
-    },
-    "number": 6
+    }
   },
   {
     "name": "The Chariot",
@@ -317,8 +310,7 @@
         "I pause and recalibrate my direction, seeking clarity and guidance before proceeding.",
         "I acknowledge self-doubt and rekindle my inner fire to regain control and momentum."
       ]
-    },
-    "number": 7
+    }
   },
   {
     "name": "Strength",
@@ -358,8 +350,7 @@
         "I release the need to control and embrace the strength in vulnerability.",
         "Seeking support and guidance strengthens me, not weakens my resolve."
       ]
-    },
-    "number": 8
+    }
   },
   {
     "name": "The Hermit",
@@ -399,8 +390,7 @@
         "I break free from unhealthy patterns and seek guidance from a wise source.",
         "I reconnect with my true self and step out of the shadows with renewed clarity."
       ]
-    },
-    "number": 9
+    }
   },
   {
     "name": "Wheel of Fortune",
@@ -440,8 +430,7 @@
         "I have the power to navigate the wheel and seize control.",
         "I learn from setbacks, because every turn can be a valuable lesson."
       ]
-    },
-    "number": 10
+    }
   },
   {
     "name": "Justice",
@@ -485,8 +474,7 @@
         "I release the grip of blame and embrace compassion for myself and others.",
         "I stand up for what is right, even when it's difficult."
       ]
-    },
-    "number": 11
+    }
   },
   {
     "name": "The Hanged Man",
@@ -524,8 +512,7 @@
         "I gently nudge myself out of stagnation and take decisive action.",
         "I release the fear of the unknown and embrace the potential for growth."
       ]
-    },
-    "number": 12
+    }
   },
   {
     "name": "Death",
@@ -564,8 +551,7 @@
         "Releasing limiting attachments, I open my arms to healthy connections and joyful experiences.",
         "Learning from the past, I honor its wisdom while forging a bright and fulfilling future."
       ]
-    },
-    "number": 13
+    }
   },
   {
     "name": "Temperance",
@@ -607,8 +593,7 @@
         "I step back and seek guidance, releasing resistance to find inner peace.",
         "I gently adjust my course, integrating lessons from imbalance into wisdom."
       ]
-    },
-    "number": 14
+    }
   },
   {
     "name": "The Devil",
@@ -647,8 +632,7 @@
         "My courage shatters limitations, propelling me toward boundless potential.",
         "With each fear faced, I rise stronger, a radiant warrior in my own journey."
       ]
-    },
-    "number": 15
+    }
   },
   {
     "name": "The Tower",
@@ -684,8 +668,7 @@
         "Clinging to the past hinders my growth.",
         "I release resistance and open to the transformative power of upheaval."
       ]
-    },
-    "number": 16
+    }
   },
   {
     "name": "The Star",
@@ -725,8 +708,7 @@
         "I nourish my spirit with self-care, allowing my true potential to blossom.",
         "I seek guidance and support, remembering that darkness cannot dim my star."
       ]
-    },
-    "number": 17
+    }
   },
   {
     "name": "The Moon",
@@ -764,8 +746,7 @@
         "I face my anxieties head-on, seeking strength and understanding within myself.",
         "I release the grip of the past and embrace the possibilities of a new dawn."
       ]
-    },
-    "number": 18
+    }
   },
   {
     "name": "The Sun",
@@ -803,8 +784,7 @@
         "I allow shadows to obscure my inner light, hindering my progress.",
         "I seek external validation and approval, neglecting my own worth."
       ]
-    },
-    "number": 19
+    }
   },
   {
     "name": "Judgement",
@@ -842,8 +822,7 @@
         "I forgive myself and others, opening myself to the possibility of redemption.",
         "I pause and reflect, discerning which paths truly align with my highest good."
       ]
-    },
-    "number": 20
+    }
   },
   {
     "name": "The World",
@@ -881,8 +860,7 @@
         "I seek the lessons hidden in my setbacks and strive for true completion.",
         "I break free from stagnation and embrace the journey of transformation."
       ]
-    },
-    "number": 21
+    }
   },
   {
     "name": "Ace of Cups",
@@ -923,8 +901,7 @@
         "I choose to see the positive in every situation, nurturing my inner wellspring of joy.",
         "I trust my intuition and navigate challenges with compassion for myself and others."
       ]
-    },
-    "number": 22
+    }
   },
   {
     "name": "Two of Cups",
@@ -964,8 +941,7 @@
         "I am open to healing and forgiveness, strengthening my bonds with others.",
         "My heart is a magnet, attracting the relationships I desire."
       ]
-    },
-    "number": 23
+    }
   },
   {
     "name": "Three of Cups",
@@ -1001,8 +977,7 @@
         "My authentic self shines, attracting supportive and like-minded individuals.",
         "I nurture my inner child, embracing playful energy and lightheartedness."
       ]
-    },
-    "number": 24
+    }
   },
   {
     "name": "Four of Cups",
@@ -1044,8 +1019,7 @@
         "I release past disappointments and welcome the future with open arms.",
         "Reconnecting with my inner self reveals hidden treasures and ignites new passions."
       ]
-    },
-    "number": 25
+    }
   },
   {
     "name": "Five of Cups",
@@ -1085,8 +1059,7 @@
         "I choose to see the spilled cups as overflowing blessings, reminding me of the abundance in my life.",
         "Forward, not backward, I direct my gaze, seeking the hidden gems amidst the scattered fragments."
       ]
-    },
-    "number": 26
+    }
   },
   {
     "name": "Six of Cups",
@@ -1126,8 +1099,7 @@
         "I gently release the grip of the past and step into the present moment, open to new possibilities.",
         "I forgive myself for past mistakes and choose to move forward with compassion and understanding."
       ]
-    },
-    "number": 27
+    }
   },
   {
     "name": "Seven of Cups",
@@ -1167,8 +1139,7 @@
         "I clear the fog of indecision and take decisive action, grounded in reality and self-awareness.",
         "Shuffling through fleeting desires, I discern what truly nourishes my soul and focus my energy wisely."
       ]
-    },
-    "number": 28
+    }
   },
   {
     "name": "Eight of Cups",
@@ -1210,8 +1181,7 @@
         "Compassionately releasing attachments, I create space for deeper self-discovery.",
         "While honoring the past, I focus on the present moment and the joy that awaits."
       ]
-    },
-    "number": 29
+    }
   },
   {
     "name": "Nine of Cups",
@@ -1252,8 +1222,7 @@
         "I release the grip of desire and embrace contentment.",
         "True happiness lies within, not in external validation."
       ]
-    },
-    "number": 30
+    }
   },
   {
     "name": "Ten of Cups",
@@ -1293,8 +1262,7 @@
         "I release blockages to emotional fulfillment and allow love to flow freely.",
         "I seek understanding and mend broken connections, knowing harmony is always possible."
       ]
-    },
-    "number": 31
+    }
   },
   {
     "name": "Page of Cups",
@@ -1337,8 +1305,7 @@
         "I release emotional blockages and reconnect with my intuition.",
         "I nurture my dreams and cultivate a fertile imagination."
       ]
-    },
-    "number": 32
+    }
   },
   {
     "name": "Knight of Cups",
@@ -1383,8 +1350,7 @@
         "I release unrealistic expectations and embrace the flow of life with an open heart.",
         "I transform my sensitivity into a powerful tool for understanding and connection."
       ]
-    },
-    "number": 33
+    }
   },
   {
     "name": "Queen of Cups",
@@ -1424,8 +1390,7 @@
         "I set healthy boundaries to protect my sensitive heart and recharge my energy.",
         "Seeking guidance from my intuition, I navigate emotional tides with grace and wisdom."
       ]
-    },
-    "number": 34
+    }
   },
   {
     "name": "King of Cups",
@@ -1467,8 +1432,7 @@
         "I release emotional blockages, finding peace and clarity within.",
         "I reclaim my inner wisdom, stepping into my role as a compassionate leader."
       ]
-    },
-    "number": 35
+    }
   },
   {
     "name": "Ace of Swords",
@@ -1507,8 +1471,7 @@
         "My inner critic is quieted, allowing me to channel my intellect for good.",
         "I choose forgiveness over harshness, transforming past conflicts into wisdom."
       ]
-    },
-    "number": 36
+    }
   },
   {
     "name": "Two of Swords",
@@ -1546,8 +1509,7 @@
         "I gently release resistance and open myself to unexpected solutions.",
         "Inner peace allows me to navigate crossroads with grace and discernment."
       ]
-    },
-    "number": 37
+    }
   },
   {
     "name": "Three of Swords",
@@ -1587,8 +1549,7 @@
         "I seek support and connection, knowing I don't have to walk this path alone.",
         "Even in darkness, the seeds of healing and growth are planted."
       ]
-    },
-    "number": 38
+    }
   },
   {
     "name": "Four of Swords",
@@ -1630,8 +1591,7 @@
         "I seek healthy ways to release stress and cultivate inner peace.",
         "I detach from external pressures and reconnect with my inner guidance."
       ]
-    },
-    "number": 39
+    }
   },
   {
     "name": "Five of Swords",
@@ -1659,8 +1619,7 @@
         "I let go of past battles and choose forgiveness, paving the way for new beginnings.",
         "My true power lies in collaboration, not competition. I open my heart to understanding and unity."
       ]
-    },
-    "number": 40
+    }
   },
   {
     "name": "Six of Swords",
@@ -1700,8 +1659,7 @@
         "Accepting change unlocks new opportunities for growth and healing.",
         "Though the waters may be rough, I trust my inner compass to guide me safely."
       ]
-    },
-    "number": 41
+    }
   },
   {
     "name": "Seven of Swords",
@@ -1737,8 +1695,7 @@
         "I integrate past lessons, letting go of deceptive behaviors for a more honest path.",
         "I choose transparency and open communication, fostering trust and deeper connections."
       ]
-    },
-    "number": 42
+    }
   },
   {
     "name": "Eight of Swords",
@@ -1774,8 +1731,7 @@
         "I choose to see my situation from a new angle, revealing hidden possibilities.",
         "Even in darkness, I possess the power to illuminate my path."
       ]
-    },
-    "number": 43
+    }
   },
   {
     "name": "Nine of Swords",
@@ -1803,8 +1759,7 @@
         "I choose to release the grip of negativity and step into the light of self-compassion.",
         "I acknowledge my anxieties and transform them into wisdom, paving the way for a brighter future."
       ]
-    },
-    "number": 44
+    }
   },
   {
     "name": "Ten of Swords",
@@ -1842,8 +1797,7 @@
         "Hidden blessings await me as I surrender to the inevitable.",
         "My intuition illuminates the path forward, even in uncertainty."
       ]
-    },
-    "number": 45
+    }
   },
   {
     "name": "Page of Swords",
@@ -1882,8 +1836,7 @@
         "I clear away mental clutter and sharpen my focus.",
         "I listen to understand, not just to reply, fostering open and honest dialogue."
       ]
-    },
-    "number": 46
+    }
   },
   {
     "name": "Knight of Swords",
@@ -1915,8 +1868,7 @@
         "I transform aggression into assertive action, building bridges rather than walls.",
         "I seek wise counsel to temper my blade, finding balance in my pursuit."
       ]
-    },
-    "number": 47
+    }
   },
   {
     "name": "Queen of Swords",
@@ -1966,8 +1918,7 @@
         "I transform my inner critic into a gentle voice of self-compassion and growth.",
         "My strength lies not just in wielding the sword, but in choosing to lay it down when needed."
       ]
-    },
-    "number": 48
+    }
   },
   {
     "name": "King of Swords",
@@ -2010,8 +1961,7 @@
         "I listen with an open mind, integrating different perspectives into my decisions.",
         "My power lies not in domination, but in collaboration and shared wisdom."
       ]
-    },
-    "number": 49
+    }
   },
   {
     "name": "Ace of Wands",
@@ -2045,8 +1995,7 @@
         "I release stagnation and reignite my enthusiasm.",
         "I seek guidance and refocus my energy for a powerful new start."
       ]
-    },
-    "number": 50
+    }
   },
   {
     "name": "Two of Wands",
@@ -2084,8 +2033,7 @@
         "I seek clarity before committing to action, grounding my desires in a map of purpose.",
         "Doubt whispers in the shadows, but I hold steady, rekindling the spark of my inner compass."
       ]
-    },
-    "number": 51
+    }
   },
   {
     "name": "Three of Wands",
@@ -2128,8 +2076,7 @@
         "I release fear and resistance, allowing my dreams to take flight.",
         "I reexamine my direction and adjust my sails for a more fulfilling journey."
       ]
-    },
-    "number": 52
+    }
   },
   {
     "name": "Four of Wands",
@@ -2167,8 +2114,7 @@
         "I release stagnation and seek opportunities for growth and connection.",
         "I honor my foundations and cultivate deeper roots of community."
       ]
-    },
-    "number": 53
+    }
   },
   {
     "name": "Five of Wands",
@@ -2204,8 +2150,7 @@
         "I release my need to control and embrace the flow of competition.",
         "I step back from the chaos and seek a higher perspective."
       ]
-    },
-    "number": 54
+    }
   },
   {
     "name": "Six of Wands",
@@ -2241,8 +2186,7 @@
         "I acknowledge setbacks as temporary detours on my path to triumph.",
         "I release self-doubt and embrace my inner power to overcome challenges."
       ]
-    },
-    "number": 55
+    }
   },
   {
     "name": "Seven of Wands",
@@ -2278,8 +2222,7 @@
         "I seek understanding instead of defending my position.",
         "I let go of attachments to outdated beliefs."
       ]
-    },
-    "number": 56
+    }
   },
   {
     "name": "Eight of Wands",
@@ -2320,8 +2263,7 @@
         "I release resistance and allow the flow of events to guide me.",
         "I slow down my pace, find clarity amidst chaos, and navigate challenges with grace."
       ]
-    },
-    "number": 57
+    }
   },
   {
     "name": "Nine of Wands",
@@ -2361,8 +2303,7 @@
         "I acknowledge my weariness, rest is not surrender.",
         "Reassess my stance, a different perspective might bring clarity."
       ]
-    },
-    "number": 58
+    }
   },
   {
     "name": "Ten of Wands",
@@ -2390,8 +2331,7 @@
         "I shed unnecessary burdens, reclaiming my energy for true purpose.",
         "I seek support, knowing collaboration lightens the load."
       ]
-    },
-    "number": 59
+    }
   },
   {
     "name": "Page of Wands",
@@ -2429,8 +2369,7 @@
         "I ground my impulsive energy and refine my vision before taking action.",
         "I seek guidance and channel my enthusiasm productively."
       ]
-    },
-    "number": 60
+    }
   },
   {
     "name": "Knight of Wands",
@@ -2466,8 +2405,7 @@
         "I tame my impulsive nature and channel my energy into focused pursuits.",
         "I seek guidance and direction before charging blindly into the unknown."
       ]
-    },
-    "number": 61
+    }
   },
   {
     "name": "Queen of Wands",
@@ -2505,8 +2443,7 @@
         "I pause to rekindle my spark and reconnect with my inner lioness.",
         "Doubts may flicker, but I choose to trust my intuition and roar again."
       ]
-    },
-    "number": 62
+    }
   },
   {
     "name": "King of Wands",
@@ -2548,8 +2485,7 @@
         "I release the grip of domination and embrace open-hearted collaboration.",
         "I channel my fiery energy into creative expression, not controlling ambition."
       ]
-    },
-    "number": 63
+    }
   },
   {
     "name": "Ace of Pentacles",
@@ -2588,8 +2524,7 @@
         "I release fear and doubt, opening myself to receive the gifts life has to offer.",
         "I nourish my roots, grounding myself in stability and security."
       ]
-    },
-    "number": 64
+    }
   },
   {
     "name": "Two of Pentacles",
@@ -2625,8 +2560,7 @@
         "I release my overcommitment and prioritize tasks with clarity.",
         "I delegate with confidence and create space for ease and joy."
       ]
-    },
-    "number": 65
+    }
   },
   {
     "name": "Three of Pentacles",
@@ -2663,8 +2597,7 @@
         "I seek to understand and harmonize differing perspectives.",
         "I release the need for control and trust the flow of co-creation."
       ]
-    },
-    "number": 66
+    }
   },
   {
     "name": "Four of Pentacles",
@@ -2700,8 +2633,7 @@
         "I release my attachment to material things and open my heart to true wealth.",
         "I loosen my grip and allow abundance to flow freely through me."
       ]
-    },
-    "number": 67
+    }
   },
   {
     "name": "Five of Pentacles",
@@ -2735,8 +2667,7 @@
         "Resilience blooms from hardship. I rise stronger than before.",
         "Open my hand to receive support. Abundance flows freely."
       ]
-    },
-    "number": 68
+    }
   },
   {
     "name": "Six of Pentacles",
@@ -2774,8 +2705,7 @@
         "I release limiting beliefs about scarcity and trust in the flow of abundance.",
         "I recognize my worth and give generously to myself first."
       ]
-    },
-    "number": 69
+    }
   },
   {
     "name": "Seven of Pentacles",
@@ -2813,8 +2743,7 @@
         "I release the need to control outcomes and embrace the cyclical nature of growth.",
         "I reassess my priorities and refocus on efforts that align with my long-term goals."
       ]
-    },
-    "number": 70
+    }
   },
   {
     "name": "Eight of Pentacles",
@@ -2852,8 +2781,7 @@
         "I acknowledge scattered energy and refocus for greater impact.",
         "I learn from setbacks and refine my approach for better results."
       ]
-    },
-    "number": 71
+    }
   },
   {
     "name": "Nine of Pentacles",
@@ -2894,8 +2822,7 @@
         "I release attachment to material things and find value beyond possessions.",
         "I rebalance my focus and prioritize my true desires."
       ]
-    },
-    "number": 72
+    }
   },
   {
     "name": "Ten of Pentacles",
@@ -2939,8 +2866,7 @@
         "I release attachment to material security and trust in my inner wealth.",
         "I break free from limiting beliefs and open myself to abundance."
       ]
-    },
-    "number": 73
+    }
   },
   {
     "name": "Page of Pentacles",
@@ -2982,8 +2908,7 @@
       "reversed": [
         "I release stagnation and seek guidance to manifest my abundance."
       ]
-    },
-    "number": 74
+    }
   },
   {
     "name": "Knight of Pentacles",
@@ -3019,8 +2944,7 @@
         "I release attachment to material security and embrace adaptability.",
         "I seek balance and prioritize my well-being beyond material pursuits."
       ]
-    },
-    "number": 75
+    }
   },
   {
     "name": "Queen of Pentacles",
@@ -3059,8 +2983,7 @@
         "I release attachment to material things and prioritize true value.",
         "I break free from self-doubt and claim my inner queen."
       ]
-    },
-    "number": 76
+    }
   },
   {
     "name": "King of Pentacles",
@@ -3104,7 +3027,6 @@
         "I release attachments to material security and find stability within.",
         "I step back from indulgence and seek deeper meaning beyond possessions."
       ]
-    },
-    "number": 77
+    }
   }
 ]

@@ -1,11 +1,11 @@
 import React from "react";
 import "./Keyword.css";
 
-interface TitleProps {
+interface KeywordProps {
   keyword: string;
 }
 
-function Keyword({ keyword }: TitleProps) {
+function Keyword({ keyword }: KeywordProps) {
   return <div className="keyword">{keyword}</div>;
 }
 

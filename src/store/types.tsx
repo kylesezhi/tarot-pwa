@@ -1,7 +1,7 @@
 export const REVERSED_CHANCE = 0.4;
 export const BACK_OF_CARD_NUMBER = 78;
 export type Orientation = "upright" | "reversed";
-export type Type = "major" | "minor";
+export type Type = "major" | "cups" | "pentacles" | "swords" | "wands";
 export type Card = {
   number: number;
   orientation: Orientation;
@@ -9,6 +9,7 @@ export type Card = {
 export type Interpretation = {
   name: string;
   type: string;
+  number: number;
   keywords: {
     upright: Array<string>;
     reversed: Array<string>;
@@ -48,8 +49,9 @@ export const backCard: Card = {
   number: BACK_OF_CARD_NUMBER,
   orientation: "upright",
 };
-export const emptyInterpretation = {
+export const emptyInterpretation: Interpretation = {
   name: "",
+  number: 0,
   type: "major",
   keywords: {
     upright: [],

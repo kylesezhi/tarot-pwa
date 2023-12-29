@@ -11,8 +11,8 @@ function Affirmations({ affirmations }: AffirmationProps) {
   return (
     <Swiper spaceBetween={50} slidesPerView={1}>
       {affirmations.map((affirmation) => (
-        <SwiperSlide>
-          <Affirmation key={affirmation} affirmation={affirmation} />
+        <SwiperSlide key={affirmation}>
+          <Affirmation affirmation={affirmation} />
         </SwiperSlide>
       ))}
     </Swiper>
