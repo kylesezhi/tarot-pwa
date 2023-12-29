@@ -8,6 +8,5 @@
 1. Inform user they can update with badge, update button
 1. Add click to display description after interpretation
 1. Ensure offline works
-1. Cache images from `tarot-images.netlify.app`
 1. Write tests
 1. Storybook? lol
