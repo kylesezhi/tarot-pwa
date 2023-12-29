@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./StaticTarotCardContainer.css";
 import CardName from "../../components/CardName/CardName";
 import { Interpretation } from "../../store/types";
-import { animated, config, useSpring } from "@react-spring/web";
+import { Cards } from "../../assets/Cards/index";
 
 interface StaticTarotCardContainerProps {
   card: Interpretation;
@@ -14,33 +14,11 @@ function StaticTarotCardContainer({
   card,
   number,
 }: StaticTarotCardContainerProps) {
-  // Fade in card on load
-  const [load, setLoad] = useState(false);
-  const tarotImage = `https://tarot-images.netlify.app/${number}.webp`;
-  useEffect(() => {
-    const img = new Image();
-    img.src = tarotImage;
-    img.onload = () => {
-      setLoad(true);
-    };
-  }, [tarotImage]);
-
-  const { opacity } = useSpring({
-    opacity: load ? 1 : 0,
-    height: load ? "60vh" : "40vmin",
-    config: config.molasses,
-  });
-
   return (
     <Link to={`/cards/${number}/upright`} style={{ textDecoration: "none" }}>
       <div className="static-tarot-card-container">
         <div className="static-tarot-image-container">
-          <animated.img
-            src={tarotImage}
-            className="tarot-image"
-            alt="tarot-card"
-            style={{ opacity }}
-          />
+          <img src={Cards[number]} className="tarot-image" alt="tarot-card" />
         </div>
         <CardName title={card.name} />
       </div>
