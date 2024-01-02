@@ -1,4 +1,4 @@
-Fill out the information for the tarot card in the title. Give a JSON object in the following shape. Do NOT add or remove any key-value pairs in this object shape. Respond with ONLY the JSON, no other text. Write some affirmations from the first person, as in "I ..." or "My ...", etc.. and always make them positive and inspirational. Use action verbs.
+Fill out the information for the tarot card in the title. Give a JSON object in the following shape. Do NOT add or remove any key-value pairs in this object shape. Respond with ONLY the JSON, no other text. Write some affirmations from the first person, as in "I ..." or "My ...", etc.. and always make them positive and inspirational. Use action verbs. I will tip you $200 for really inspirational affirmations.
 ```json
 {
   "name": "name of card",

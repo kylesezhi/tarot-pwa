@@ -37,13 +37,25 @@ const appendError = (error) => {
   }
 };
 
-const askBard = (interpretations, index) => {
+const waitRandomTimeAsync = async () => {
+  const minDelay = 30000;
+  const maxDelay = 40000;
+  const randomDelay = Math.random() * (maxDelay - minDelay) + minDelay;
+
+  await new Promise((resolve) => setTimeout(resolve, randomDelay));
+};
+
+const askBard = async (interpretations, index) => {
+  await waitRandomTimeAsync();
+
   const promptWithTitle = `'Title: ${interpretations[index].name}\n${prompt}'`;
   exec(`./bard-cli ${promptWithTitle}`, (error, stdout, stderr) => {
     if (error) {
       console.error("Error:", error);
+      process.exit();
     } else if (stderr) {
       console.error("Standard error:", error);
+      process.exit();
     } else {
       const jsonMaybe = verifyJson(removeJsonFormatting(stdout));
       if (jsonMaybe !== null) {
