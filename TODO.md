@@ -1,5 +1,6 @@
 # TODO
 
+1. Move getTitle to the state interpretation
 1. Use state machine
 1. Add click to display description after interpretation
 1. Inform user they can update with badge, update button
