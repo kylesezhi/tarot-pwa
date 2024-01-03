@@ -45,9 +45,10 @@ const waitRandomTimeAsync = async () => {
   await new Promise((resolve) => setTimeout(resolve, randomDelay));
 };
 
-const askBard = async (interpretations, index) => {
+const askBard = async (interpretations, subset) => {
   await waitRandomTimeAsync();
 
+  const index = subset.shift();
   const promptWithTitle = `'Title: ${interpretations[index].name}\n${prompt}'`;
   exec(`./bard-cli ${promptWithTitle}`, (error, stdout, stderr) => {
     if (error) {
@@ -75,13 +76,20 @@ const askBard = async (interpretations, index) => {
     }
 
     // Recursion
-    if (index + 1 >= interpretations.length) {
+    if (subset.length <= 0) {
       console.log("done.");
       saveFile(interpretations);
       return;
     }
-    askBard(interpretations, index + 1);
+    askBard(interpretations, subset);
   });
 };
 
-askBard(interpretations, 0);
+// Subset
+askBard(interpretations, [20, 23, 30, 62, 66, 72, 73, 76]);
+
+// All
+// askBard(
+//   interpretations,
+//   Array.from({ length: 10 }, (_, i) => i),
+// );
