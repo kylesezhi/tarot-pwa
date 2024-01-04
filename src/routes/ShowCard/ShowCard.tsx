@@ -58,14 +58,21 @@ function ShowCard() {
           <RotateTarotCardImage number={number} orientation={orientation} />
         </div>
       </div>
-      <div className="interpretations">
-        <Affirmations affirmations={interpretation.affirmations[orientation]} />
-        <Title title={title} />
-        <Keywords>{interpretation.keywords[orientation]}</Keywords>
-        <Description>{interpretation.description[orientation]}</Description>
-        <LabyrinthosLink name={interpretation.name} type={interpretation.type}>
-          more
-        </LabyrinthosLink>
+      <div className="interpretation-container">
+        <div className="interpretations">
+          <Affirmations
+            affirmations={interpretation.affirmations[orientation]}
+          />
+          <Title title={title} />
+          <Keywords>{interpretation.keywords[orientation]}</Keywords>
+          <Description>{interpretation.description[orientation]}</Description>
+          <LabyrinthosLink
+            name={interpretation.name}
+            type={interpretation.type}
+          >
+            more
+          </LabyrinthosLink>
+        </div>
       </div>
     </>
   );

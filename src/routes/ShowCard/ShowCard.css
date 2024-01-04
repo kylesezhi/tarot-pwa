@@ -23,8 +23,11 @@ body {
   will-change: transform, opacity;
 }
 
+.interpretation-container {
+  display: flex;
+  justify-content: center;
+}
+
 .interpretations {
-  padding-left: 5vmin;
-  padding-right: 5vmin;
-  padding-bottom: 5vmin;
+  width: 80vw;
 }

@@ -29,13 +29,15 @@ function InterpretationContainer() {
 
   return (
     <animated.div className="interpretation-container" style={style}>
-      <Affirmation affirmation={interpretation.affirmation} />
-      <Title title={interpretation.name} />
-      <Keywords>{interpretation.keywords}</Keywords>
-      <Description>{interpretation.description}</Description>
-      <LabyrinthosLink name={name} type={interpretation.type}>
-        more
-      </LabyrinthosLink>
+      <div className="interpretations">
+        <Affirmation affirmation={interpretation.affirmation} />
+        <Title title={interpretation.name} />
+        <Keywords>{interpretation.keywords}</Keywords>
+        <Description>{interpretation.description}</Description>
+        <LabyrinthosLink name={name} type={interpretation.type}>
+          more
+        </LabyrinthosLink>
+      </div>
     </animated.div>
   );
 }
