@@ -38,10 +38,20 @@ function TarotCard({
 
   return (
     <div className="tarot-sides-container">
-      <animated.div id="front-card" className="tarot-card" style={frontStyle}>
+      <animated.div
+        data-testid="front-card"
+        id="front-card"
+        className="tarot-card"
+        style={frontStyle}
+      >
         <TarotCardImage number={number} orientation={orientation} />
       </animated.div>
-      <animated.div id="back-card" className="tarot-card" style={backStyle}>
+      <animated.div
+        id="back-card"
+        data-testid="back-card"
+        className="tarot-card"
+        style={backStyle}
+      >
         <TarotCardImage number={78} />
         <Version />
       </animated.div>

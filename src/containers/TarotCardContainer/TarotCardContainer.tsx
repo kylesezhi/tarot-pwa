@@ -21,7 +21,11 @@ function TarotCardContainer() {
   };
 
   return (
-    <div onClick={onClick} className="tarot-card-container">
+    <div
+      data-testid="tarot-card-container"
+      onClick={onClick}
+      className="tarot-card-container"
+    >
       <TarotCard
         number={card.number}
         orientation={card.orientation}
