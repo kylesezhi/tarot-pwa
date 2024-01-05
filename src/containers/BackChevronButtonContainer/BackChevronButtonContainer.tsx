@@ -17,7 +17,7 @@ function BackChevronButtonContainer() {
   };
 
   return (
-    <div onClick={handleClick} style={style}>
+    <div onClick={handleClick} style={style} className="back-chevron-button">
       <BackChevron show={isCardShowing} />
     </div>
   );

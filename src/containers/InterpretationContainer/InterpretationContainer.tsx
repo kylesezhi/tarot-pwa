@@ -28,7 +28,11 @@ function InterpretationContainer() {
   };
 
   return (
-    <animated.div className="interpretation-container" style={style}>
+    <animated.div
+      data-testid="interpretation-container"
+      className="interpretation-container"
+      style={style}
+    >
       <div className="interpretations">
         <Affirmation affirmation={interpretation.affirmation} />
         <Title title={interpretation.name} />

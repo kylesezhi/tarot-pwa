@@ -16,7 +16,7 @@ function BackChevronLinkContainer({
   };
 
   return (
-    <div onClick={handleClick}>
+    <div onClick={handleClick} className="back-chevron-link">
       <BackChevron />
     </div>
   );
