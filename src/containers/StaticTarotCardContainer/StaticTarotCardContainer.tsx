@@ -16,6 +16,9 @@ function StaticTarotCardContainer({
   card,
   number,
 }: StaticTarotCardContainerProps) {
+  const ZOOM_IN = 0.1;
+  const ZOOM_OUT = -0.1;
+
   // Fade in card on load
   const [load, setLoad] = useState<boolean>(false);
   const [zoom, setZoom] = useState(0);
@@ -26,8 +29,9 @@ function StaticTarotCardContainer({
     config: config.molasses,
   });
   const bind = useGesture({
-    onHover: ({ hovering }) => (hovering ? setZoom(0.1) : setZoom(0)),
-    onDrag: ({ active }) => (active ? setZoom(0) : setZoom(0.1)),
+    onHover: ({ hovering }) => (hovering ? setZoom(ZOOM_IN) : setZoom(0)),
+    onPointerDown: () => setZoom(ZOOM_OUT),
+    onPointerUp: () => setZoom(ZOOM_IN),
   });
 
   const style = { opacity, scale };

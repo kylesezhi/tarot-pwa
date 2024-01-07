@@ -13,6 +13,9 @@ function RotateTarotCardImage({
   number = 78,
   orientation = "upright",
 }: TarotImageProps) {
+  const ZOOM_IN = 0.1;
+  const ZOOM_OUT = -0.1;
+
   const [zoom, setZoom] = useState(0);
   const tarotImage = require(`../../assets/Cards/${number}.webp`);
 
@@ -22,8 +25,9 @@ function RotateTarotCardImage({
     config: config.molasses,
   });
   const bind = useGesture({
-    onHover: ({ hovering }) => (hovering ? setZoom(0.05) : setZoom(0)),
-    onDrag: ({ active }) => (active ? setZoom(0) : setZoom(0.05)),
+    onHover: ({ hovering }) => (hovering ? setZoom(ZOOM_IN) : setZoom(0)),
+    onPointerDown: () => setZoom(ZOOM_OUT),
+    onPointerUp: () => setZoom(ZOOM_IN),
   });
 
   const reversedStyle = {

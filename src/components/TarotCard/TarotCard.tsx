@@ -10,13 +10,18 @@ interface TarotProps {
   number: number;
   orientation: Orientation;
   isCardShowing: boolean;
+  isClickable: boolean;
 }
 
 function TarotCard({
   number = 78,
   orientation = "upright",
   isCardShowing,
+  isClickable,
 }: TarotProps) {
+  const ZOOM_IN = 0.05;
+  const ZOOM_OUT = -0.05;
+
   // Fade in card on load
   const [load, setLoad] = useState(false);
   const [zoom, setZoom] = useState(0);
@@ -30,8 +35,9 @@ function TarotCard({
     config: config.molasses,
   });
   const bind = useGesture({
-    onHover: ({ hovering }) => (hovering ? setZoom(0.05) : setZoom(0)),
-    onDrag: ({ active }) => (active ? setZoom(0) : setZoom(0.05)),
+    onHover: ({ hovering }) => (hovering ? setZoom(ZOOM_IN) : setZoom(0)),
+    onPointerDown: () => isClickable && setZoom(ZOOM_OUT),
+    onPointerUp: () => isClickable && setZoom(ZOOM_IN),
   });
   const frontStyle = {
     opacity: opacity.to((o) => (!isCardShowing ? 0 : 1 - o)),
