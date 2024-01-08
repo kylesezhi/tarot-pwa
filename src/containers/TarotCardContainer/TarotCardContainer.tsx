@@ -30,7 +30,7 @@ function TarotCardContainer() {
         number={card.number}
         orientation={card.orientation}
         isCardShowing={isCardShowing}
-        isClickable={!isInterpretationShowing}
+        isClickable={!(isInterpretationShowing && isCardShowing)}
       />
     </div>
   );

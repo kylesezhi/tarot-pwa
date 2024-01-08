@@ -20,7 +20,7 @@ function TarotCard({
   isClickable,
 }: TarotProps) {
   const ZOOM_IN = 0.05;
-  const ZOOM_OUT = -0.05;
+  const ZOOM_OUT = -0.1;
 
   // Fade in card on load
   const [load, setLoad] = useState(false);
@@ -35,7 +35,8 @@ function TarotCard({
     config: config.molasses,
   });
   const bind = useGesture({
-    onHover: ({ hovering }) => (hovering ? setZoom(ZOOM_IN) : setZoom(0)),
+    onHover: ({ hovering }) =>
+      hovering && isClickable ? setZoom(ZOOM_IN) : setZoom(0),
     onPointerDown: () => isClickable && setZoom(ZOOM_OUT),
     onPointerUp: () => isClickable && setZoom(ZOOM_IN),
   });
