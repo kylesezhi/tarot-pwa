@@ -20,13 +20,17 @@ root.render(
 // Learn more about service workers: https://cra.link/PWA
 serviceWorkerRegistration.register({
   onUpdate: (registration) => {
-    registration.unregister().then(() => {
-      window.location.reload();
-    });
-  },
-  onSuccess: (registration) => {
-    console.info("service worker on success state");
-    console.log(registration);
+    const waitingServiceWorker = registration.waiting;
+
+    if (waitingServiceWorker) {
+      waitingServiceWorker.addEventListener("statechange", ({ target }) => {
+        const sw = target as ServiceWorker;
+        if (sw.state === "activated") {
+          window.location.reload();
+        }
+      });
+      waitingServiceWorker.postMessage({ type: "SKIP_WAITING" });
+    }
   },
 });
 
